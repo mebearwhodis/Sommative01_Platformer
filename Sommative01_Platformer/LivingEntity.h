@@ -3,8 +3,6 @@
 
 class LivingEntity : public Entity, public sf::Transformable
 {
-protected:
-public:
 	sf::Texture up_;
 	sf::Texture down_;
 	sf::Texture left_;
@@ -16,12 +14,8 @@ public:
 
 	bool is_sprinting_;
 
+public:
 	void Sprint(const bool value) { is_sprinting_ = value; }
-
 	void LoadEntity(const std::string& textures_folder);
-
-	LivingEntity() = default;
-	~LivingEntity() override = default;
-
 };
 

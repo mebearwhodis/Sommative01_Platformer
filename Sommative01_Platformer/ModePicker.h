@@ -9,8 +9,9 @@ enum class GameMode {
 
 class ModePicker
 {
-public:
 	sf::RenderWindow window_;
+
+public:
 	GameMode ModeChoice();
 };
 

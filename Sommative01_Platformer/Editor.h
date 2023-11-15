@@ -4,7 +4,6 @@
 
 class Editor
 {
-public:
 	//Window
 	sf::RenderWindow window_;
 	sf::View view_;
@@ -15,6 +14,7 @@ public:
 
 	TileType selected_tile_type_ = TileType::kGrass;
 
+public:
 	void init();
 	void update();
 };

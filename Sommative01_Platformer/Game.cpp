@@ -26,10 +26,10 @@ void Game::init()
 	view_.setSize(1024, 1024);
 
 	// Create Debug limit lines
-	debug_limit_shape_vertical_.setSize(sf::Vector2f(2, 100));
+	debug_limit_shape_vertical_.setSize(sf::Vector2f(2, 100000));
 	debug_limit_shape_vertical_.setOrigin(1, 0);
 	debug_limit_shape_vertical_.setFillColor(sf::Color(255, 0, 255));
-	debug_limit_shape_horizontal_.setSize(sf::Vector2f(100, 2));
+	debug_limit_shape_horizontal_.setSize(sf::Vector2f(100000, 2));
 	debug_limit_shape_horizontal_.setOrigin(0, 1);
 	debug_limit_shape_horizontal_.setFillColor(sf::Color(255, 0, 255));
 
@@ -72,7 +72,7 @@ void Game::update()
 	Level::background_sprite_.setPosition(player_.getPosition().x, player_.getPosition().y);
 
 	// Collision debug lines
-	sf::Vector2i player_coords = Level::PosToCoords(player_.getPosition());
+	const sf::Vector2i player_coords = Level::PosToCoords(player_.getPosition());
 	constexpr int margin = 1;
 
 	if (Level::GetTileAt(player_coords + sf::Vector2i(1, 0)).solid_ || (player_coords + sf::Vector2i(1, 0)).x >= Level::GetLevelWidth()) {

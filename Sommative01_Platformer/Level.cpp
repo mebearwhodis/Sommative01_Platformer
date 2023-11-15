@@ -17,6 +17,15 @@ Level::Level(const sf::Vector2f starting_point, const int level_width, const int
 	level_height_ = level_height;
 }
 
+Tile Level::GetTileAt(const sf::Vector2i tile_coord)
+{
+	if (tile_coord.x < 0 || tile_coord.y < 0 || tile_coord.x >= GetLevelWidth() || tile_coord.y >= GetLevelHeight())
+	{
+		return { Tile{TileType::kEmptySolid,true,false} };
+	}
+	return tile_map_[tile_coord.y * GetLevelWidth() + tile_coord.x];
+}
+
 sf::Vector2i Level::PosToCoords(const sf::Vector2f world_pos)
 {
 	sf::Vector2i coord;

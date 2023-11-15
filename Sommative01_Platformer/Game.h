@@ -5,7 +5,6 @@
 
 class Game
 {
-public:
 	//Physics
 	sf::Vector2f gravity_force_ = sf::Vector2f(0, 0.f);
 
@@ -22,6 +21,7 @@ public:
 	//Player
 	Player player_;
 
+public:
 	void init();
 	void update();
 };

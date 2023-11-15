@@ -3,9 +3,7 @@
 
 class Player : public LivingEntity
 {
-public:
 	sf::Vector2f player_size_;
-
 	//sf::Vector2f player_pos_;
 	sf::Vector2f player_speed_;
 	sf::Vector2f player_velocity_;
@@ -40,11 +38,8 @@ public:
 	//	this->setPosition(position);
 
 	//}
-
+public:
 	void ResetPosition(const sf::Vector2f respawn_point);
-
-	Player();
-	~Player() override = default;
 
 protected:
 	void draw(sf::RenderTarget& target, sf::RenderStates states) const override
