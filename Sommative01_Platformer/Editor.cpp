@@ -35,6 +35,37 @@ void Editor::init()
 
 void Editor::update()
 {
+	sf::Event event;
+	while (window_.pollEvent(event)) {
+		if (event.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
+		{
+			window_.close();
+		}
+
+		//Resets the tiles
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::T))
+		{
+			int a = 0;
+			for (Tile i : Level::tile_map_)
+			{
+				Level::SetTileAt({ Tile(TileType::kEmpty, false, false) }, a);
+				//Level::tile_map_[a].sprite_.setTexture(Texture::type_to_texture_.at(Level::tile_map_[a].tile_type_));
+				a++;
+			}
+		}
+		// Saves the level
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::F5))
+		{
+			Level::SaveLevelToJson("levelOne.json");
+		}
+
+		// Loads the level
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::F9))
+		{
+			Level::LoadLevelFromJson("levelOne.json");
+		}
+
+	}
 	//TODO: View that we can move with wasd (or mouse?) zoom, dezoom. Add more sprites, add coins and powerup and mobs (probably in another tilemap?)
 	const int level_width = Level::GetLevelWidth();
 	const int level_height = Level::GetLevelHeight();

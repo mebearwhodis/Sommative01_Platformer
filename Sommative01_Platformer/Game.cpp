@@ -46,6 +46,20 @@ void Game::init()
 
 void Game::update()
 {
+	sf::Event event;
+	while (window_.pollEvent(event))
+	{
+		if (event.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
+		{
+			window_.close();
+		}
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::R))
+		{
+			//TODO: Function to reset player position
+			player_.ResetPosition(Level::GetRespawnPoint());
+		}
+	}
+	window_.clear();
 	float limit_x_low = -1000000000.f;
 	float limit_x_high = 1000000000.f;
 	float limit_y_low = -1000000000.f;
@@ -55,10 +69,10 @@ void Game::update()
 	player_.jump_force_ = sf::Vector2f(0.0f, 0.0f);
 	player_.move_force_ = sf::Vector2f(0.0f, 0.0f);
 
-	Level::background_sprite_.setPosition(player_.player_pos_.x, player_.player_pos_.y);
+	Level::background_sprite_.setPosition(player_.getPosition().x, player_.getPosition().y);
 
 	// Collision debug lines
-	sf::Vector2i player_coords = Level::PosToCoords(player_.player_pos_);
+	sf::Vector2i player_coords = Level::PosToCoords(player_.getPosition());
 	constexpr int margin = 1;
 
 	if (Level::GetTileAt(player_coords + sf::Vector2i(1, 0)).solid_ || (player_coords + sf::Vector2i(1, 0)).x >= Level::GetLevelWidth()) {
@@ -170,25 +184,28 @@ void Game::update()
 	player_.player_velocity_.x += player_.player_speed_.x;
 
 	delta += sf::Vector2f(player_.player_velocity_.x, player_.player_velocity_.y);
-
+	
+	sf::Vector2f temp_pos(player_.getPosition());
 	//Position is a sum of speeds 
-	player_.player_pos_ += delta;
-	if (player_.player_pos_.x >= limit_x_high - (player_.player_size_.x / 2)) {
-		player_.player_pos_.x = limit_x_high - (player_.player_size_.x / 2);
+	player_.setPosition(temp_pos.x += delta.x, temp_pos.y += delta.y);
+	if (player_.getPosition().x >= limit_x_high - (player_.player_size_.x / 2)) {
+		player_.setPosition(limit_x_high - (player_.player_size_.x / 2), temp_pos.y);
 	}
-	if (player_.player_pos_.x <= limit_x_low + (player_.player_size_.x / 2)) {
-		player_.player_pos_.x = limit_x_low + (player_.player_size_.x / 2);
+	if (player_.getPosition().x <= limit_x_low + (player_.player_size_.x / 2)) {
+		player_.setPosition(limit_x_low + (player_.player_size_.x / 2), temp_pos.y);
 	}
 	player_.grounded_ = false;
-	if (player_.player_pos_.y >= limit_y_high - (player_.player_size_.y / 2)) {
-		player_.player_pos_.y = limit_y_high - (player_.player_size_.y / 2);
+	if (player_.getPosition().y >= limit_y_high - (player_.player_size_.y / 2)) {
+		player_.setPosition(temp_pos.x, limit_y_high - (player_.player_size_.y / 2));
 		player_.grounded_ = true;
 	}
-	if (player_.player_pos_.y <= limit_y_low + (player_.player_size_.y / 2)) {
-		player_.player_pos_.y = limit_y_low + (player_.player_size_.y / 2);
+	if (player_.getPosition().y <= limit_y_low + (player_.player_size_.y / 2)) {
+		player_.setPosition(temp_pos.x, limit_y_low + (player_.player_size_.y / 2));
 		player_.player_velocity_.y = 0;
 	}
 
+	//TODO: Virer player_pos_ et utiliser play_.get/set position à la place, OU (plutôt ça) prendre la position avant mouvement, mettre dans une variable (ou dans player_pos_), effectuer les modifications sur la variable puis setPosition à la variable
+	player_.setPosition(temp_pos);
 	if (Level::GetTileAt(player_coords).deadly_) {
 		std::cout << "u ded" << std::endl;
 		player_.ResetPosition(Level::GetRespawnPoint());
@@ -209,8 +226,8 @@ void Game::update()
 	window_.draw(debug_limit_shape_horizontal_);
 
 
-	player_.setPosition(player_.player_pos_.x, player_.player_pos_.y);
-	view_.setCenter(player_.player_pos_);
+	//player_.setPosition(player_.player_pos_.x, player_.player_pos_.y);
+	view_.setCenter(player_.getPosition());
 
 	window_.draw(player_);
 	//player1_hitbox.setPosition(player_bounds.left, player_bounds.top);

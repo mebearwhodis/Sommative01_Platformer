@@ -4,7 +4,7 @@
 GameMode ModePicker::ModeChoice()
 {
 	{
-		sf::RenderWindow window(sf::VideoMode(800, 600), "Game Modes Menu");
+		window_.create(sf::VideoMode(800, 600), "Game Modes Menu");
 		sf::Font font;
 		font.loadFromFile("data/arial.ttf");
 
@@ -19,35 +19,35 @@ GameMode ModePicker::ModeChoice()
 
 		GameMode selected_mode = GameMode::kNone;
 
-		while (window.isOpen()) {
+		while (window_.isOpen()) {
 			sf::Event event;
-			while (window.pollEvent(event)) {
+			while (window_.pollEvent(event)) {
 				if (event.type == sf::Event::Closed) {
-					window.close();
+					window_.close();
 				}
 
 				if (event.type == sf::Event::MouseButtonPressed) {
-					sf::Vector2i mouse_pos = sf::Mouse::getPosition(window);
+					sf::Vector2i mouse_pos = sf::Mouse::getPosition(window_);
 
 					if (game_mode.getGlobalBounds().contains(mouse_pos.x, mouse_pos.y)) {
 						selected_mode = GameMode::kGame;
 						return selected_mode;
-						window.close(); // Replace with logic to start Game
+						window_.close(); // Replace with logic to start Game
 
 					}
 					else if (editor_mode.getGlobalBounds().contains(mouse_pos.x, mouse_pos.y)) {
 						selected_mode = GameMode::kEditor;
 						return selected_mode;
-						window.close(); // Replace with logic to start Editor
+						window_.close(); // Replace with logic to start Editor
 					}
 				}
 			}
 
-			window.clear();
-			window.draw(title);
-			window.draw(game_mode);
-			window.draw(editor_mode);
-			window.display();
+			window_.clear();
+			window_.draw(title);
+			window_.draw(game_mode);
+			window_.draw(editor_mode);
+			window_.display();
 		}
 		return GameMode::kNone;
 	}

@@ -1,4 +1,5 @@
 #pragma once
+#include <SFML/Graphics.hpp>
 
 enum class GameMode {
 	kGame,
@@ -9,7 +10,8 @@ enum class GameMode {
 class ModePicker
 {
 public:
-	static GameMode ModeChoice();
+	sf::RenderWindow window_;
+	GameMode ModeChoice();
 };
 
 

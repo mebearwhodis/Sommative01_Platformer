@@ -3,7 +3,7 @@
 void Player::ResetPosition(const sf::Vector2f respawn_point)
 {
 	setPosition(respawn_point);
-	player_pos_ = respawn_point;
+	//player_pos_ = respawn_point;
 	player_velocity_ = sf::Vector2f(0, 0);
 }
 

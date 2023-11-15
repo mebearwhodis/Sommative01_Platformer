@@ -6,7 +6,7 @@ class Player : public LivingEntity
 public:
 	sf::Vector2f player_size_;
 
-	sf::Vector2f player_pos_;
+	//sf::Vector2f player_pos_;
 	sf::Vector2f player_speed_;
 	sf::Vector2f player_velocity_;
 	sf::Vector2f jump_force_;

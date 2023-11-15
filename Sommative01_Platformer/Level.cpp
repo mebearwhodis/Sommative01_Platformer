@@ -4,7 +4,7 @@
 #include <iostream>
 #include <nlohmann/json.hpp>
 
-sf::Vector2f Level::respawn_point_ = sf::Vector2f(1280, 128);
+sf::Vector2f Level::respawn_point_ = sf::Vector2f(128*7 + 64, 128*2);
 int Level::level_width_ = 50;
 int Level::level_height_ = 10;
 Tile Level::tile_map_[500] = { Tile(TileType::kEmpty, false, false) };
