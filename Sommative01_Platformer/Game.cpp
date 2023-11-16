@@ -6,12 +6,10 @@
 #include "Texture.h"
 
 
-void Game::init()
+
+
+void Game::init(const Level& level, const Texture& texture)
 {
-	Texture::LoadTextures();
-	Level::LoadLevelFromJson("levelOne.json");
-
-
 	//selected_tile_ = Tile(TileType::kEmpty, false, false);
 	//player_pos_ = Level::GetStartingPoint();
 
@@ -33,18 +31,10 @@ void Game::init()
 	debug_limit_shape_horizontal_.setOrigin(0, 1);
 	debug_limit_shape_horizontal_.setFillColor(sf::Color(255, 0, 255));
 
-	//Create Player
-	player_.LoadEntity("data/sprites/player");
-	player_.ResetPosition(Level::GetRespawnPoint());
-
-	//Create background
-	Level::background_sprite_.setTexture(Texture::background_texture_);
-	Level::background_sprite_.setOrigin(Level::background_sprite_.getGlobalBounds().width / 2, Level::background_sprite_.getGlobalBounds().height / 2);
-
-
+	player_.ResetPosition(level.GetRespawnPoint());
 }
 
-void Game::update()
+void Game::update(Level level, const Texture& texture)
 {
 	sf::Event event;
 	while (window_.pollEvent(event))
@@ -56,7 +46,7 @@ void Game::update()
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::R))
 		{
 			//TODO: Function to reset player position
-			player_.ResetPosition(Level::GetRespawnPoint());
+			player_.ResetPosition(level.GetRespawnPoint());
 		}
 	}
 	window_.clear();
@@ -66,25 +56,25 @@ void Game::update()
 	float limit_y_high = 1000000000.f;
 
 	//Reset the forces
-	player_.jump_force_ = sf::Vector2f(0.0f, 0.0f);
-	player_.move_force_ = sf::Vector2f(0.0f, 0.0f);
+	player_.SetJumpForce(sf::Vector2f(0.0f, 0.0f));
+	player_.SetMoveForce(sf::Vector2f(0.0f, 0.0f));
 
-	Level::background_sprite_.setPosition(player_.getPosition().x, player_.getPosition().y);
+	level.SetBackgroundPosition(sf::Vector2f(player_.getPosition().x, player_.getPosition().y));
 
 	// Collision debug lines
-	const sf::Vector2i player_coords = Level::PosToCoords(player_.getPosition());
+	const sf::Vector2i player_coords = level.PosToCoords(player_.getPosition());
 	constexpr int margin = 1;
 
-	if (Level::GetTileAt(player_coords + sf::Vector2i(1, 0)).solid_ || (player_coords + sf::Vector2i(1, 0)).x >= Level::GetLevelWidth()) {
+	if (level.GetTileAt(player_coords + sf::Vector2i(1, 0)).solid_ || (player_coords + sf::Vector2i(1, 0)).x >= level.GetLevelWidth()) {
 		limit_x_high = (player_coords.x + 1) * TILE_SIZE - margin;
 	}
-	if (Level::GetTileAt(player_coords + sf::Vector2i(-1, 0)).solid_ || (player_coords + sf::Vector2i(-1, 0)).x < 0) {
+	if (level.GetTileAt(player_coords + sf::Vector2i(-1, 0)).solid_ || (player_coords + sf::Vector2i(-1, 0)).x < 0) {
 		limit_x_low = (player_coords.x) * TILE_SIZE + margin;
 	}
-	if (Level::GetTileAt(player_coords + sf::Vector2i(0, 1)).solid_ || (player_coords + sf::Vector2i(0, 1)).y >= Level::GetLevelHeight()) {
+	if (level.GetTileAt(player_coords + sf::Vector2i(0, 1)).solid_ || (player_coords + sf::Vector2i(0, 1)).y >= level.GetLevelHeight()) {
 		limit_y_high = (player_coords.y + 1) * TILE_SIZE - margin;
 	}
-	if (Level::GetTileAt(player_coords + sf::Vector2i(0, -1)).solid_ || (player_coords + sf::Vector2i(0, -1)).y < 0) {
+	if (level.GetTileAt(player_coords + sf::Vector2i(0, -1)).solid_ || (player_coords + sf::Vector2i(0, -1)).y < 0) {
 		limit_y_low = (player_coords.y) * TILE_SIZE + margin;
 	}
 
@@ -95,38 +85,38 @@ void Game::update()
 	//Sprint & Air Control
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::LShift) || sf::Keyboard::isKeyPressed(sf::Keyboard::RShift))
 	{
-		player_.Sprint(true);
+		player_.SetSprintingState(true);
 	}
 	else
 	{
-		player_.Sprint(false);
+		player_.SetSprintingState(false);
 	}
 
 
-	float speed_factor = player_.grounded_ ? 1.0f : 0.70f;
-	if(player_.is_sprinting_)
+	float speed_factor = player_.GetGroundedValue() ? 1.0f : 0.70f;
+	if (player_.GetSprintingState())
 	{
-		speed_factor *= player_.sprint_modifier_;
+		speed_factor *= player_.GetSprintModifier();
 	}
 
 	//Left & Right
 	sf::Vector2f delta(0, 0);
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) || sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
 	{
-		player_.SetSprite(player_.left_);
-		delta += sf::Vector2f(-1 * (player_.player_speed_.x) * speed_factor , 0);
+		player_.SetSprite(player_.GetTextureLeft());
+		delta += sf::Vector2f(-1 * (player_.GetPlayerSpeed().x) * speed_factor, 0);
 	}
 
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) || sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
 	{
-		player_.SetSprite(player_.right_);
-		delta += sf::Vector2f((player_.player_speed_.x) * speed_factor, 0);
+		player_.SetSprite(player_.GetTextureRight());
+		delta += sf::Vector2f((player_.GetPlayerSpeed().x) * speed_factor, 0);
 	}
 
 	//Capping falling speed
-	if (player_.player_speed_.y > 3)
+	if (player_.GetPlayerSpeed().y > 3)
 	{
-		player_.player_speed_.y = 3;
+		player_.SetPlayerSpeed(sf::Vector2f(player_.GetPlayerSpeed().x, 3));
 	}
 
 	////Maybe use W/UP and S/Down for power-ups/moves (Floating, groundpound, ...)
@@ -146,74 +136,75 @@ void Game::update()
 
 	//Jump higher if you press longer
 	const bool jump_key_is_down = sf::Keyboard::isKeyPressed(sf::Keyboard::Space);
-	if (jump_key_is_down && player_.grounded_)
+	if (jump_key_is_down && player_.GetGroundedValue())
 	{
-		player_.jump_force_ = sf::Vector2f(0.0f, -35.0f);
+		player_.SetJumpForce(sf::Vector2f(0.0f, -35.0f));
 	}
-	player_.player_velocity_.y += jump_key_is_down ? 0.0f : 1.5f;
 
-	if (!player_.grounded_)
+	player_.SetPlayerVelocity(sf::Vector2f(player_.GetPlayerVelocity().x, player_.GetPlayerVelocity().y + (jump_key_is_down ? 0.0f : 1.5f)));
+
+	if (!player_.GetGroundedValue())
 	{
-		player_.player_velocity_ += gravity_force_;
+		player_.SetPlayerVelocity(player_.GetPlayerVelocity() + gravity_force_);
 	}
 	// Cancel vertical velocity if grounded
 	else
 	{
-		player_.player_velocity_.y = 0;
+		player_.SetPlayerVelocity(sf::Vector2f(player_.GetPlayerVelocity().x, 0));
 	}
 
-	player_.player_velocity_ += player_.jump_force_;
-	player_.player_velocity_ += player_.move_force_;
+	player_.SetPlayerVelocity(player_.GetPlayerVelocity() + player_.GetJumpForce());
+	player_.SetPlayerVelocity(player_.GetPlayerVelocity() + player_.GetMoveForce());
 
 
 	//Horizontal deceleration and acceleration
-	player_.player_speed_ += player_.player_velocity_;
-	if (!player_.grounded_)
+	player_.SetPlayerSpeed(player_.GetPlayerSpeed() + player_.GetPlayerVelocity());
+	if (!player_.GetGroundedValue())
 	{
-		player_.player_speed_.x *= 0.95f;
+		player_.SetPlayerSpeed(sf::Vector2f(player_.GetPlayerSpeed().x * 0.95f, player_.GetPlayerSpeed().y));
 	}
 	else
 	{
-		if (std::abs(player_.player_speed_.x) < 0.3)
+		if (std::abs(player_.GetPlayerSpeed().x) < 0.3)
 		{
-			player_.player_speed_.x = 0;
+			player_.SetPlayerSpeed(sf::Vector2f(0, player_.GetPlayerSpeed().y));
 		}
-		player_.player_speed_.x *= 0.92f;
+		player_.SetPlayerSpeed(sf::Vector2f(player_.GetPlayerSpeed().x * 0.92f, player_.GetPlayerSpeed().y));
 	}
 	//TODO: Test following line ??? 
-	player_.player_velocity_.x += player_.player_speed_.x;
+	player_.SetPlayerVelocity(sf::Vector2f(player_.GetPlayerVelocity().x + player_.GetPlayerSpeed().x, player_.GetPlayerVelocity().y));
 
-	delta += sf::Vector2f(player_.player_velocity_.x, player_.player_velocity_.y);
-	
+	delta += sf::Vector2f(player_.GetPlayerVelocity().x, player_.GetPlayerVelocity().y);
+
 	sf::Vector2f temp_pos(player_.getPosition());
 	//Position is a sum of speeds 
 	player_.setPosition(temp_pos.x += delta.x, temp_pos.y += delta.y);
-	if (player_.getPosition().x >= limit_x_high - (player_.player_size_.x / 2)) {
-		player_.setPosition(limit_x_high - (player_.player_size_.x / 2), temp_pos.y);
+	if (player_.getPosition().x >= limit_x_high - (player_.GetPlayerSize().x / 2)) {
+		player_.setPosition(limit_x_high - (player_.GetPlayerSize().x / 2), temp_pos.y);
 	}
-	if (player_.getPosition().x <= limit_x_low + (player_.player_size_.x / 2)) {
-		player_.setPosition(limit_x_low + (player_.player_size_.x / 2), temp_pos.y);
+	if (player_.getPosition().x <= limit_x_low + (player_.GetPlayerSize().x / 2)) {
+		player_.setPosition(limit_x_low + (player_.GetPlayerSize().x / 2), temp_pos.y);
 	}
-	player_.grounded_ = false;
-	if (player_.getPosition().y >= limit_y_high - (player_.player_size_.y / 2)) {
-		player_.setPosition(temp_pos.x, limit_y_high - (player_.player_size_.y / 2));
-		player_.grounded_ = true;
+	player_.SetGroundedValue(false);
+	if (player_.getPosition().y >= limit_y_high - (player_.GetPlayerSize().y / 2)) {
+		player_.setPosition(temp_pos.x, limit_y_high - (player_.GetPlayerSize().y / 2));
+		player_.SetGroundedValue(true);
 	}
-	if (player_.getPosition().y <= limit_y_low + (player_.player_size_.y / 2)) {
-		player_.setPosition(temp_pos.x, limit_y_low + (player_.player_size_.y / 2));
-		player_.player_velocity_.y = 0;
+	if (player_.getPosition().y <= limit_y_low + (player_.GetPlayerSize().y / 2)) {
+		player_.setPosition(temp_pos.x, limit_y_low + (player_.GetPlayerSize().y / 2));
+		player_.SetPlayerVelocity(sf::Vector2f(player_.GetPlayerVelocity().x, 0));
 	}
 
-	//TODO: Virer player_pos_ et utiliser play_.get/set position à la place, OU (plutôt ça) prendre la position avant mouvement, mettre dans une variable (ou dans player_pos_), effectuer les modifications sur la variable puis setPosition à la variable
+	//TODO: Virer player_pos_, speed et velocity, assigner à des variables au début, modifier les variables pui Set dans la classe
 	player_.setPosition(temp_pos);
-	if (Level::GetTileAt(player_coords).deadly_) {
+	if (level.GetTileAt(player_coords).deadly_) {
 		std::cout << "u ded" << std::endl;
-		player_.ResetPosition(Level::GetRespawnPoint());
+		player_.ResetPosition(level.GetRespawnPoint());
 	}
 
 
 	//Drawing the tiles
-	Level::DrawLevel(window_);
+	level.DrawLevel(window_);
 
 	// Visualize limits
 	debug_limit_shape_vertical_.setPosition(limit_x_high, 0);

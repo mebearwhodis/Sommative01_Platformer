@@ -11,16 +11,20 @@ int main()
 {
 	ModePicker mode_picker;
 	GameMode answer = mode_picker.ModeChoice();
+	Texture textures;
+	textures.LoadTextures();
+	Level level_one(sf::Vector2f(128 * 7 + 64, 128 * 2), 20, 6, textures.GetBackgroundTexture());
+
 	switch (answer)
 	{
 	case(GameMode::kGame):
 	{
 		Game game;
-		game.init();
+		game.init(level_one, textures);
 
 		while (game.window_.isOpen())
 		{
-			game.update();
+			game.update(level_one, textures);
 		}
 		break;
 	}
@@ -31,7 +35,7 @@ int main()
 
 		while (editor.window_.isOpen())
 		{
-			editor.update();
+			editor.update(level_one, textures);
 		}
 		break;
 	}

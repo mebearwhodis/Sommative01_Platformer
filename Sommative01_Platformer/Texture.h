@@ -16,5 +16,8 @@ class Texture
 
 public:
 	void LoadTextures();
+
+    sf::Texture GetBackgroundTexture() { return background_texture_; }
+    std::map<TileType, sf::Texture> GetTextureMap() { return type_to_texture_; }
 };
 

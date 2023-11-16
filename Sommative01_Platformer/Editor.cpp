@@ -6,7 +6,7 @@
 
 void Editor::init()
 {
-	Texture::LoadTextures();
+
 
 	//View
 	/*sf::View view;
@@ -28,12 +28,9 @@ void Editor::init()
 	hovered_tile_.setOutlineColor(sf::Color::Magenta);
 	hovered_tile_.setOutlineThickness(-1);
 	hovered_tile_.setOrigin(0, 0);
-
-
-	Level level_one(sf::Vector2f(50, 50), 50, 10);
 }
 
-void Editor::update()
+void Editor::update(Level level, Texture texture)
 {
 	sf::Event event;
 	while (window_.pollEvent(event)) {
@@ -45,30 +42,28 @@ void Editor::update()
 		//Resets the tiles
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::T))
 		{
-			int a = 0;
-			for (Tile i : Level::tile_map_)
+			for (int i = 0; i < level.GetLevelWidth() * level.GetLevelHeight(); ++i)
 			{
-				Level::SetTileAt({ Tile(TileType::kEmpty, false, false) }, a);
-				//Level::tile_map_[a].sprite_.setTexture(Texture::type_to_texture_.at(Level::tile_map_[a].tile_type_));
-				a++;
+				level.SetTileAt(Tile(TileType::kEmpty, false, false), i);
+				//level.SetTileSprite(texture.GetTextureMap().at(level.GetTileAt(i).tile_type_), i);
 			}
 		}
 		// Saves the level
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::F5))
 		{
-			Level::SaveLevelToJson("levelOne.json");
+			level.SaveLevelToJson("levelOne.json");
 		}
 
 		// Loads the level
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::F9))
 		{
-			Level::LoadLevelFromJson("levelOne.json");
+			level.LoadLevelFromJson("levelOne.json", texture);
 		}
-
 	}
+
 	//TODO: View that we can move with wasd (or mouse?) zoom, dezoom. Add more sprites, add coins and powerup and mobs (probably in another tilemap?)
-	const int level_width = Level::GetLevelWidth();
-	const int level_height = Level::GetLevelHeight();
+	const int level_width = level.GetLevelWidth();
+	const int level_height = level.GetLevelHeight();
 
 	const sf::Vector2i mouse_pos = sf::Mouse::getPosition(window_);
 	const sf::Vector2i mouse_tile_coord(mouse_pos.x / TILE_SIZE, mouse_pos.y / TILE_SIZE);
@@ -87,35 +82,30 @@ void Editor::update()
 	//Editor interaction
 	if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
 	{
-		if (mouse_tile_coord.x < 0 || mouse_tile_coord.x >= level_width || mouse_tile_coord.y < 0 || mouse_tile_coord.y >= level_height)
+		if (mouse_tile_coord.x >= 0 && mouse_tile_coord.x < level_width && mouse_tile_coord.y >= 0 && mouse_tile_coord.y < level_height)
 		{
-		}
-		else
-		{
-			Level::SetTileTypeAt(selected_tile_type_, mouse_tile_coord.y * level_width + mouse_tile_coord.x);
-			Level::SetTileSprite(Texture::type_to_texture_.at(Level::GetTileAt(mouse_tile_coord.y * level_width + mouse_tile_coord.x).tile_type_), mouse_tile_coord.y * level_width + mouse_tile_coord.x);
-
+			const int index = mouse_tile_coord.y * level_width + mouse_tile_coord.x;
+			level.SetTileTypeAt(selected_tile_type_, index);
+			level.SetTileSprite(texture.GetTextureMap().at(level.GetTileAt(index).tile_type_), index);
 		}
 	}
+
 	if (sf::Mouse::isButtonPressed(sf::Mouse::Right))
 	{
-		if (mouse_tile_coord.x < 0 || mouse_tile_coord.x >= level_width || mouse_tile_coord.y < 0 || mouse_tile_coord.y >= level_height)
+		if (mouse_tile_coord.x >= 0 && mouse_tile_coord.x < level_width && mouse_tile_coord.y >= 0 && mouse_tile_coord.y < level_height)
 		{
-		}
-		else
-		{
-			Level::SetTileTypeAt(TileType::kEmpty, mouse_tile_coord.y * level_width + mouse_tile_coord.x);
-			Level::SetTileSprite(Texture::type_to_texture_.at(Level::GetTileAt(mouse_tile_coord.y * level_width + mouse_tile_coord.x).tile_type_), mouse_tile_coord.y * level_width + mouse_tile_coord.x);
+			const int index = mouse_tile_coord.y * level_width + mouse_tile_coord.x;
+			level.SetTileTypeAt(TileType::kEmpty, index);
+			level.SetTileSprite(texture.GetTextureMap().at(level.GetTileAt(index).tile_type_), index);
 		}
 	}
-
 
 
 
 	// Visualize limits
 
 	window_.clear(sf::Color::Black);
-	Level::DrawLevel(window_);
+	level.DrawLevel(window_);
 	window_.draw(hovered_tile_);
 
 

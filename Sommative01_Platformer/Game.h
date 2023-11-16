@@ -1,16 +1,14 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 
+#include "Level.h"
 #include "Player.h"
+#include "Texture.h"
 
 class Game
 {
 	//Physics
 	sf::Vector2f gravity_force_ = sf::Vector2f(0, 0.f);
-
-	//Window
-	sf::RenderWindow window_;
-	sf::View view_;
 
 	//Tiles & Collisions
 	sf::RectangleShape base_tile_;
@@ -22,8 +20,16 @@ class Game
 	Player player_;
 
 public:
-	void init();
-	void update();
+
+	Game() : player_("data/sprites/player", 1.2f, 3.f) {}
+
+
+	//Window
+	sf::RenderWindow window_;
+	sf::View view_;
+
+	void init(const Level& level, const Texture& texture);
+	void update(Level level, const Texture& texture);
 };
 
 

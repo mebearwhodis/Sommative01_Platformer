@@ -15,7 +15,18 @@ class LivingEntity : public Entity, public sf::Transformable
 	bool is_sprinting_;
 
 public:
-	void Sprint(const bool value) { is_sprinting_ = value; }
-	void LoadEntity(const std::string& textures_folder);
+	//Constructor
+	explicit LivingEntity(const std::string& textures_folder, float sprint_modifier, float horizontal_max_speed);
+	//void LoadEntity(const std::string& textures_folder);
+
+	//Getters & Setters
+	sf::Texture GetTextureUp() { return up_; }
+	sf::Texture GetTextureDown() { return down_; }
+	sf::Texture GetTextureLeft() { return left_; }
+	sf::Texture GetTextureRight() { return right_; }
+	float GetSprintModifier() const { return sprint_modifier_; }
+	float GetHorizontalMaxSpeed() const { return horizontal_max_speed_; }
+	bool GetSprintingState() const { return is_sprinting_; }
+	void SetSprintingState(const bool sprint_state) { is_sprinting_ = sprint_state; }	
 };
 

@@ -2,12 +2,11 @@
 #include "Tile.h"
 #include <SFML/Graphics.hpp>
 
+#include "Level.h"
+#include "Texture.h"
+
 class Editor
 {
-	//Window
-	sf::RenderWindow window_;
-	sf::View view_;
-
 	//Tiles
 	sf::RectangleShape base_tile_;
 	sf::RectangleShape hovered_tile_;
@@ -15,7 +14,12 @@ class Editor
 	TileType selected_tile_type_ = TileType::kGrass;
 
 public:
+	//Window
+	sf::RenderWindow window_;
+	sf::View view_;
+
 	void init();
-	void update();
+	//sf::RenderWindow GetWindow() { return window_; } -Not working, deleted function error?
+	void update(Level level, Texture texture);
 };
 
