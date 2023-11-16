@@ -15,7 +15,7 @@ class Level {
     int level_width_;
     int level_height_;
     sf::Sprite background_sprite_;
-    std::vector<Tile> tile_map_;
+    Tile tile_map_[500];
 
 public:
 
@@ -29,14 +29,14 @@ public:
     int GetLevelWidth() const { return level_width_; }
     int GetLevelHeight() const { return level_height_; }
 
-	std::vector<Tile> GetTileMap() { return tile_map_; }
+	Tile GetTileMap() { return *tile_map_; }
 
     Tile GetTileAt(sf::Vector2i tile_coord) const;
-    Tile GetTileAt(const int index) { return tile_map_.at(index); }
+    Tile GetTileAt(const int index) { return tile_map_[index]; }
 
-    void SetTileAt(const Tile& t, const int index) { tile_map_.at(index) = t; }
-    void SetTileTypeAt(const TileType t, const int index) { tile_map_.at(index).tile_type_ = t; }
-    void SetTileSprite(const sf::Texture& t, const int index) { tile_map_.at(index).sprite_.setTexture(t); }
+    void SetTileAt(const Tile& t, const int index) { tile_map_[index] = t; }
+    void SetTileTypeAt(const TileType t, const int index) { tile_map_[index].tile_type_ = t; }
+    void SetTileSprite(const sf::Texture& t, const int index) { tile_map_[index].sprite_.setTexture(t); }
 
 
     sf::Sprite GetBackgroundSprite() const { return background_sprite_; }

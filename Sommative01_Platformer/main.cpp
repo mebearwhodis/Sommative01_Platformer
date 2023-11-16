@@ -9,27 +9,27 @@
 
 int main()
 {
-	ModePicker mode_picker;
-	GameMode answer = mode_picker.ModeChoice();
+	//ModePicker mode_picker;
+	//GameMode answer = mode_picker.ModeChoice();
 	Texture textures;
 	textures.LoadTextures();
-	Level level_one(sf::Vector2f(128 * 7 + 64, 128 * 2), 20, 6, textures.GetBackgroundTexture());
+	Level level_one(sf::Vector2f(128 * 7 + 64, 128 * 2), 100, 5, textures.GetBackgroundTexture());
 
-	switch (answer)
-	{
-	case(GameMode::kGame):
-	{
-		Game game;
-		game.init(level_one, textures);
+	//switch (answer)
+	//{
+	//case(GameMode::kGame):
+	//{
+	//	Game game;
+	//	game.init(level_one, textures);
 
-		while (game.window_.isOpen())
-		{
-			game.update(level_one, textures);
-		}
-		break;
-	}
-	case GameMode::kEditor:
-	{
+	//	while (game.window_.isOpen())
+	//	{
+	//		game.update(level_one, textures);
+	//	}
+	//	break;
+	//}
+	//case GameMode::kEditor:
+	//{
 		Editor editor;
 		editor.init();
 
@@ -37,12 +37,12 @@ int main()
 		{
 			editor.update(level_one, textures);
 		}
-		break;
-	}
+	//	break;
+	//}
 
-	case GameMode::kNone:
-		break;
-	}
+	//case GameMode::kNone:
+	//	break;
+	//}
 
 	return 0;
 };

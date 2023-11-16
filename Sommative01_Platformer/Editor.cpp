@@ -45,7 +45,7 @@ void Editor::update(Level level, Texture texture)
 			for (int i = 0; i < level.GetLevelWidth() * level.GetLevelHeight(); ++i)
 			{
 				level.SetTileAt(Tile(TileType::kEmpty, false, false), i);
-				//level.SetTileSprite(texture.GetTextureMap().at(level.GetTileAt(i).tile_type_), i);
+				//level.SetTileSprite(texture.GetTextureMap()[level.GetTileAt(i).tile_type_), i);
 			}
 		}
 		// Saves the level

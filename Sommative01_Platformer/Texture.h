@@ -4,20 +4,20 @@
 
 class Texture
 {
-    sf::Texture empty_;
-    sf::Texture dirt_;
-    sf::Texture grass_;
-    sf::Texture start_;
-    sf::Texture end_;
+    static sf::Texture empty_;
+    static sf::Texture dirt_;
+    static sf::Texture grass_;
+    static sf::Texture start_;
+    static sf::Texture end_;
 
-    sf::Texture background_texture_;
+    static sf::Texture background_texture_;
 
-    std::map<TileType, sf::Texture> type_to_texture_;
+    static std::map<TileType, sf::Texture> type_to_texture_;
 
 public:
-	void LoadTextures();
+    static void LoadTextures();
 
-    sf::Texture GetBackgroundTexture() { return background_texture_; }
-    std::map<TileType, sf::Texture> GetTextureMap() { return type_to_texture_; }
+    static sf::Texture GetBackgroundTexture() { return background_texture_; }
+    static std::map<TileType, sf::Texture> GetTextureMap() { return type_to_texture_; }
 };
 
