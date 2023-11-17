@@ -28,9 +28,7 @@ public:
 
 
 
-	Game() : player_("data/sprites/player", 1.2f, 3.f), hud_()
-	{
-	}
+	Game() : player_("data/sprites/player", 1.2f, 3.f){}
 
 
 	//Window
