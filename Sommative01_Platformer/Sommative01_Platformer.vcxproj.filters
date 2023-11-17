@@ -95,4 +95,18 @@
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="data\sprites\tiles\grassMid.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\sprites\tiles\empty.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\sprites\tiles\grassCenter.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="data\sprites\backgrounds\blue_desert.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
 </Project>
