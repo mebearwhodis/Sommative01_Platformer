@@ -20,6 +20,6 @@ public:
 
 	void init();
 	//sf::RenderWindow GetWindow() { return window_; } -Not working, deleted function error?
-	void update(const Level& level);
+	void update(Texture texture);
 };
 

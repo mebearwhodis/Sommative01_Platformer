@@ -29,10 +29,10 @@ void Editor::init()
 	hovered_tile_.setOrigin(0, 0);
 }
 
-void Editor::update(const Level& level)
+void Editor::update(Texture texture)
 {
+	texture.LoadTextures();
 	window_.clear(sf::Color::Black);
-	Texture::LoadTextures();
 	sf::Event event;
 	while (window_.pollEvent(event)) {
 		if (event.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
@@ -50,28 +50,28 @@ void Editor::update(const Level& level)
 		//Resets the tiles
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::T))
 		{
-			for (int i = 0; i < level.GetLevelWidth() * level.GetLevelHeight(); ++i)
+			for (int i = 0; i < Level::GetLevelWidth() * Level::GetLevelHeight(); ++i)
 			{
 				Level::SetTileAt(Tile(TileType::kEmpty, false, false), i);
-				//level.SetTileSprite(texture.GetTextureMap().at(level.GetTileAt(i).tile_type_), i);
+				Level::SetTileSprite(texture.GetTextureFromType(TileType::kEmpty),i);
 			}
 		}
 		// Saves the level
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::F5))
 		{
-			level.SaveLevelToJson("levelOne.json");
+			Level::SaveLevelToJson("levelOne.json");
 		}
 
 		// Loads the level
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::F9))
 		{
-			Level::LoadLevelFromJson("levelOne.json");
+			Level::LoadLevelFromJson("levelOne.json", texture);
 		}
 	}
 
 	//TODO: View that we can move with wasd (or mouse?) zoom, dezoom. Add more sprites, add coins and powerup and mobs (probably in another tilemap?)
-	const int level_width = level.GetLevelWidth();
-	const int level_height = level.GetLevelHeight();
+	const int level_width = Level::GetLevelWidth();
+	const int level_height = Level::GetLevelHeight();
 
 	const sf::Vector2i mouse_pos = sf::Mouse::getPosition(window_);
 	const sf::Vector2i mouse_tile_coord(mouse_pos.x / TILE_SIZE, mouse_pos.y / TILE_SIZE);
@@ -86,12 +86,12 @@ void Editor::update(const Level& level)
 	{
 		if (mouse_tile_coord.x >= 0 && mouse_tile_coord.x < level_width && mouse_tile_coord.y >= 0 && mouse_tile_coord.y < level_height)
 		{
-			std::cout << "Type: " << static_cast<int>(level.GetTileTypeAt(mouse_tile_coord)) << std::endl;
+			std::cout << "Type: " << static_cast<int>(Level::GetTileTypeAt(mouse_tile_coord)) << std::endl;
 			const int index = mouse_tile_coord.y * level_width + mouse_tile_coord.x;
 			Level::SetTileTypeAt(selected_tile_type_, index);
-			Level::SetTileSprite(Texture::GetTextureFromType(selected_tile_type_),index);
+			Level::SetTileSprite(texture.GetTextureFromType(selected_tile_type_),index);
 
-			std::cout << "Type: " << static_cast<int>(level.GetTileTypeAt(mouse_tile_coord)) << std::endl << "----------------" << std::endl;
+			std::cout << "Type: " << static_cast<int>(Level::GetTileTypeAt(mouse_tile_coord)) << std::endl << "----------------" << std::endl;
 		}
 	}
 
@@ -106,7 +106,7 @@ void Editor::update(const Level& level)
 
 
 
-	level.DrawLevel(window_);
+	Level::DrawLevel(window_);
 	window_.draw(hovered_tile_);
 
 

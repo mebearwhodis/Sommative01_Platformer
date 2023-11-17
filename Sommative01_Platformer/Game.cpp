@@ -8,7 +8,7 @@
 
 
 
-void Game::init(const Level& level)
+void Game::init()
 {
 	//selected_tile_ = Tile(TileType::kEmpty, false, false);
 	//player_pos_ = Level::GetStartingPoint();
@@ -31,10 +31,10 @@ void Game::init(const Level& level)
 	debug_limit_shape_horizontal_.setOrigin(0, 1);
 	debug_limit_shape_horizontal_.setFillColor(sf::Color(255, 0, 255));
 
-	player_.ResetPosition(level.GetRespawnPoint());
+	player_.ResetPosition(Level::GetRespawnPoint());
 }
 
-void Game::update(Level level)
+void Game::update()
 {
 	sf::Event event;
 	while (window_.pollEvent(event))
@@ -46,7 +46,7 @@ void Game::update(Level level)
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::R))
 		{
 			//TODO: Function to reset player position
-			player_.ResetPosition(level.GetRespawnPoint());
+			player_.ResetPosition(Level::GetRespawnPoint());
 		}
 	}
 	window_.clear();
@@ -59,23 +59,25 @@ void Game::update(Level level)
 	player_.SetJumpForce(sf::Vector2f(0.0f, 0.0f));
 	player_.SetMoveForce(sf::Vector2f(0.0f, 0.0f));
 
-	level.SetBackgroundPosition(sf::Vector2f(player_.getPosition().x, player_.getPosition().y));
+	Level::SetBackgroundPosition(sf::Vector2f(player_.getPosition().x, player_.getPosition().y));
 
 	// Collision debug lines
 	const sf::Vector2i player_coords = Level::PosToCoords(player_.getPosition());
 	constexpr int margin = 1;
 
-	if (level.GetTileAt(player_coords + sf::Vector2i(1, 0)).solid_ || (player_coords + sf::Vector2i(1, 0)).x >= level.GetLevelWidth()) {
-		limit_x_high = (player_coords.x + 1) * TILE_SIZE - margin;
+	if (Level::GetTileAt(player_coords + sf::Vector2i(1, 0)).solid_ || (player_coords + sf::Vector2i(1, 0)).x >=
+		Level::GetLevelWidth()) {
+		limit_x_high = static_cast<float>(player_coords.x + 1) * TILE_SIZE - margin;
 	}
-	if (level.GetTileAt(player_coords + sf::Vector2i(-1, 0)).solid_ || (player_coords + sf::Vector2i(-1, 0)).x < 0) {
-		limit_x_low = (player_coords.x) * TILE_SIZE + margin;
+	if (Level::GetTileAt(player_coords + sf::Vector2i(-1, 0)).solid_ || (player_coords + sf::Vector2i(-1, 0)).x < 0) {
+		limit_x_low = static_cast<float>(player_coords.x) * TILE_SIZE + margin;
 	}
-	if (level.GetTileAt(player_coords + sf::Vector2i(0, 1)).solid_ || (player_coords + sf::Vector2i(0, 1)).y >= level.GetLevelHeight()) {
-		limit_y_high = (player_coords.y + 1) * TILE_SIZE - margin;
+	if (Level::GetTileAt(player_coords + sf::Vector2i(0, 1)).solid_ || (player_coords + sf::Vector2i(0, 1)).y >=
+		Level::GetLevelHeight()) {
+		limit_y_high = static_cast<float>(player_coords.y + 1) * TILE_SIZE - margin;
 	}
-	if (level.GetTileAt(player_coords + sf::Vector2i(0, -1)).solid_ || (player_coords + sf::Vector2i(0, -1)).y < 0) {
-		limit_y_low = (player_coords.y) * TILE_SIZE + margin;
+	if (Level::GetTileAt(player_coords + sf::Vector2i(0, -1)).solid_ || (player_coords + sf::Vector2i(0, -1)).y < 0) {
+		limit_y_low = static_cast<float>(player_coords.y) * TILE_SIZE + margin;
 	}
 
 
@@ -197,14 +199,14 @@ void Game::update(Level level)
 
 	//TODO: Virer player_pos_, speed et velocity, assigner à des variables au début, modifier les variables pui Set dans la classe
 	player_.setPosition(temp_pos);
-	if (level.GetTileAt(player_coords).deadly_) {
+	if (Level::GetTileAt(player_coords).deadly_) {
 		std::cout << "u ded" << std::endl;
-		player_.ResetPosition(level.GetRespawnPoint());
+		player_.ResetPosition(Level::GetRespawnPoint());
 	}
 
 
 	//Drawing the tiles
-	level.DrawLevel(window_);
+	Level::DrawLevel(window_);
 
 	// Visualize limits
 	debug_limit_shape_vertical_.setPosition(limit_x_high, 0);

@@ -28,8 +28,8 @@ public:
 	sf::RenderWindow window_;
 	sf::View view_;
 
-	void init(const Level& level);
-	void update(Level level);
+	void init();
+	void update();
 };
 
 
