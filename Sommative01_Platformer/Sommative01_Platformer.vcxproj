@@ -149,6 +149,12 @@
     <ClInclude Include="Texture.h" />
     <ClInclude Include="Tile.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="data\sprites\backgrounds\blue_desert.png" />
+    <Image Include="data\sprites\tiles\empty.png" />
+    <Image Include="data\sprites\tiles\grassCenter.png" />
+    <Image Include="data\sprites\tiles\grassMid.png" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -4,7 +4,7 @@
 
 class Texture
 {
-    Texture() = delete;  // Deleting the constructor to prevent instantiation
+public:
     static sf::Texture empty_;
     static sf::Texture dirt_;
     static sf::Texture grass_;
@@ -15,15 +15,14 @@ class Texture
 
     static std::map<TileType, sf::Texture> type_to_texture_;
 
-public:
     static void LoadTextures();
 
-    static sf::Texture GetEmptyTexture() { return empty_; }
-    static sf::Texture GetDirtTexture() { return dirt_; }
-    static sf::Texture GetGrassTexture() { return grass_; }
-    static sf::Texture GetStartTexture() { return start_; }
-    static sf::Texture GetEndTexture() { return end_; }
+    //sf::Texture GetEmptyTexture() { return empty_; }
+    //sf::Texture GetDirtTexture() { return dirt_; }
+    //sf::Texture GetGrassTexture() { return grass_; }
+    //sf::Texture GetStartTexture() { return start_; }
+    //sf::Texture GetEndTexture() { return end_; }
     static sf::Texture GetBackgroundTexture() { return background_texture_; }
 
-    static sf::Texture GetTextureFromType(TileType t) { return type_to_texture_.at(t); }
+    static sf::Texture GetTextureFromType(const TileType t) { return type_to_texture_.at(t); }
 };

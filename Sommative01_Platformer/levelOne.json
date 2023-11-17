@@ -511,14 +511,9 @@
             "type": 0
         },
         {
-            "deadly": false,
-            "solid": false,
-            "type": 0
-        },
-        {
-            "deadly": false,
-            "solid": false,
-            "type": 0
+            "deadly": true,
+            "solid": true,
+            "type": 3
         },
         {
             "deadly": false,
@@ -1016,14 +1011,9 @@
             "type": 0
         },
         {
-            "deadly": false,
-            "solid": false,
-            "type": 0
-        },
-        {
-            "deadly": false,
-            "solid": false,
-            "type": 0
+            "deadly": true,
+            "solid": true,
+            "type": 3
         },
         {
             "deadly": false,
@@ -1517,8 +1507,53 @@
         },
         {
             "deadly": false,
+            "solid": true,
+            "type": 2
+        },
+        {
+            "deadly": false,
+            "solid": true,
+            "type": 2
+        },
+        {
+            "deadly": false,
+            "solid": true,
+            "type": 2
+        },
+        {
+            "deadly": false,
+            "solid": true,
+            "type": 2
+        },
+        {
+            "deadly": false,
             "solid": false,
             "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": true,
+            "type": 2
+        },
+        {
+            "deadly": false,
+            "solid": true,
+            "type": 2
         },
         {
             "deadly": false,
@@ -1967,98 +2002,63 @@
         },
         {
             "deadly": false,
-            "solid": false,
-            "type": 0
+            "solid": true,
+            "type": 2
         },
         {
             "deadly": false,
-            "solid": false,
-            "type": 0
+            "solid": true,
+            "type": 2
         },
         {
             "deadly": false,
-            "solid": false,
-            "type": 0
+            "solid": true,
+            "type": 2
         },
         {
             "deadly": false,
-            "solid": false,
-            "type": 0
+            "solid": true,
+            "type": 2
         },
         {
             "deadly": false,
-            "solid": false,
-            "type": 0
+            "solid": true,
+            "type": 2
         },
         {
             "deadly": false,
-            "solid": false,
-            "type": 0
+            "solid": true,
+            "type": 2
         },
         {
             "deadly": false,
-            "solid": false,
-            "type": 0
+            "solid": true,
+            "type": 2
         },
         {
             "deadly": false,
-            "solid": false,
-            "type": 0
+            "solid": true,
+            "type": 2
         },
         {
             "deadly": false,
-            "solid": false,
-            "type": 0
+            "solid": true,
+            "type": 2
         },
         {
             "deadly": false,
-            "solid": false,
-            "type": 0
+            "solid": true,
+            "type": 2
         },
         {
             "deadly": false,
-            "solid": false,
-            "type": 0
+            "solid": true,
+            "type": 2
         },
         {
             "deadly": false,
-            "solid": false,
-            "type": 0
-        },
-        {
-            "deadly": false,
-            "solid": false,
-            "type": 0
-        },
-        {
-            "deadly": false,
-            "solid": false,
-            "type": 0
-        },
-        {
-            "deadly": false,
-            "solid": false,
-            "type": 0
-        },
-        {
-            "deadly": false,
-            "solid": false,
-            "type": 0
-        },
-        {
-            "deadly": false,
-            "solid": false,
-            "type": 0
-        },
-        {
-            "deadly": false,
-            "solid": false,
-            "type": 0
-        },
-        {
-            "deadly": false,
-            "solid": false,
-            "type": 0
+            "solid": true,
+            "type": 2
         },
         {
             "deadly": false,

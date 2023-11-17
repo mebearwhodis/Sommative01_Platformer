@@ -1,5 +1,7 @@
 #include "Tile.h"
 
+#include "Texture.h"
+
 Tile::Tile()
 {
     tile_type_ = TileType::kEmpty;

@@ -1,6 +1,8 @@
 #include "ModePicker.h"
 #include <SFML/Graphics.hpp>
 
+
+//Placeholder Starting Menu
 GameMode ModePicker::ModeChoice()
 {
 	{

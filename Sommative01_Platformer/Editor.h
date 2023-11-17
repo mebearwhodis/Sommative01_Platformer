@@ -7,19 +7,20 @@
 
 class Editor
 {
+public:
 	//Tiles
 	sf::RectangleShape base_tile_;
 	sf::RectangleShape hovered_tile_;
 
-	TileType selected_tile_type_ = TileType::kGrass;
-
-public:
+	Tile selected_tile_ = {TileType::kEmpty, false, false};
 	//Window
 	sf::RenderWindow window_;
 	sf::View view_;
 
+	sf::Sprite background_sprite_;
+
 	void init();
 	//sf::RenderWindow GetWindow() { return window_; } -Not working, deleted function error?
-	void update(const Level& level);
+	void update();
 };
 

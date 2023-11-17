@@ -10,39 +10,37 @@
 
 int main()
 {
-	//ModePicker mode_picker;
-	//GameMode answer = mode_picker.ModeChoice();
-	Texture::LoadTextures();
-	const Level level_one(sf::Vector2f(128 * 7 + 64, 128 * 2), 100, 5);
+	ModePicker mode_picker;
+	const GameMode answer = mode_picker.ModeChoice();
 
-	//switch (answer)
-	//{
-	//case(GameMode::kGame):
-	//{
-	//	Game game;
-	//	game.init(level_one, textures);
 
-	//	while (game.window_.isOpen())
-	//	{
-	//		game.update(level_one, textures);
-	//	}
-	//	break;
-	//}
-	//case GameMode::kEditor:
-	//{
+	switch (answer)
+	{
+	case(GameMode::kGame):
+	{
+		Game game;
+		game.init();
+		while (game.window_.isOpen())
+		{
+			game.update();
+		}
+		break;
+	}
+	case GameMode::kEditor:
+	{
 		Editor editor;
 		editor.init();
 
 		while (editor.window_.isOpen())
 		{
-			editor.update(level_one);
+			editor.update();
 		}
-	//	break;
-	//}
+		break;
+	}
 
-	//case GameMode::kNone:
-	//	break;
-	//}
+	case GameMode::kNone:
+		break;
+	}
 
 	return 0;
 };
