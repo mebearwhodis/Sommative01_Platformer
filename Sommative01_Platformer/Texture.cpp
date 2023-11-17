@@ -41,7 +41,7 @@ void Texture::LoadTextures() {
 	floating_spike2_.loadFromFile("data/sprites/interactives/saw_move.png");
 	spike1_.loadFromFile("data/sprites/interactives/sawHalf.png");
 	spike2_.loadFromFile("data/sprites/interactives/sawHalf_move.png");
-	star_.loadFromFile("data/sprites/interactives/flagRed_down.png");
+	star_.loadFromFile("data/sprites/interactives/star.png");
 
 	background_texture_.loadFromFile("data/sprites/backgrounds/blue_desert.png");
 
@@ -54,8 +54,8 @@ void Texture::LoadTextures() {
 	interact_type_to_texture_ = {};
 	interact_type_to_texture_[InteractiveType::kEmpty] = empty_;
 	interact_type_to_texture_[InteractiveType::kCheckpoint] = checkpoint_down_;
-	interact_type_to_texture_[InteractiveType::kCheckpoint] = checkpoint_up1_;
-	interact_type_to_texture_[InteractiveType::kCheckpoint] = checkpoint_up2_;
+	interact_type_to_texture_[InteractiveType::kCheckpointUp] = checkpoint_up1_;
+	interact_type_to_texture_[InteractiveType::kCheckpointUp] = checkpoint_up2_;
 	interact_type_to_texture_[InteractiveType::kCoin] = coin_;
 	interact_type_to_texture_[InteractiveType::kDiamond] = diamond_;
 	interact_type_to_texture_[InteractiveType::kFloatingSpikes] = floating_spike1_;

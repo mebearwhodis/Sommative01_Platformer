@@ -5,6 +5,7 @@ enum class InteractiveType
 {
 	kEmpty,
 	kCheckpoint,
+	kCheckpointUp,
 	kCoin,
 	kDiamond,
 	kFloatingSpikes,
@@ -23,6 +24,7 @@ public:
     bool deadly_;
 	bool taken_;
 
+
 	Interactive();
-	Interactive(InteractiveType type, bool temporary, bool deadly);
+	Interactive(InteractiveType type, bool temporary, bool deadly, bool taken);
 };

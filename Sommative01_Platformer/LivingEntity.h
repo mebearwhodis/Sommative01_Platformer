@@ -22,11 +22,8 @@ public:
 
 	//Getters & Setters
 
-	//I couldn't get getters to work with textures & sprites and so had to pass them into public space
-	//sf::Texture GetTextureUp() { return up_; }
-	//sf::Texture GetTextureDown() { return down_; }
-	//sf::Texture GetTextureLeft() { return left_; }
-	//sf::Texture GetTextureRight() { return right_; }
+	//TODO: Figure out getters for textures & sprites. I couldn't get them to work so I had to put them in public
+
 	float GetSprintModifier() const { return sprint_modifier_; }
 	float GetHorizontalMaxSpeed() const { return horizontal_max_speed_; }
 	bool GetSprintingState() const { return is_sprinting_; }

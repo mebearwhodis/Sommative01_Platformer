@@ -14,10 +14,11 @@ class Level {
     static sf::Vector2f respawn_point_;
     static int level_width_;
     static int level_height_;
+	static int score_;
 
     //I'd rather not use a static tile_map, but it's the only way I got the game to work and I only have one level for now so it's a temporary workaround
-    static Tile tile_map_[1000];
-    static Interactive interact_map_[1000];
+    static Tile tile_map_[1600];
+    static Interactive interact_map_[1600];
 
 public:
 
@@ -27,6 +28,9 @@ public:
 
     static int GetLevelWidth() { return level_width_; }
     static int GetLevelHeight() { return level_height_; }
+
+	static int GetScore() { return score_; }
+	static void AugmentScore(const int score) { score_ += score; }
 
 	static Tile GetTileMap() { return *tile_map_; }
 
@@ -39,11 +43,18 @@ public:
 	static void SetTileTypeAt(const TileType t, const int index) { tile_map_[index].tile_type_ = t; }
 	static void SetTileSprite(const sf::Texture& t, const int index) { tile_map_[index].sprite_.setTexture(t); }
 
+
+	static Interactive GetInteractAt(sf::Vector2i item_coord);
+	static Interactive GetInteractAt(const int index) { return interact_map_[index]; }
+	static InteractiveType GetInteractTypeAt(sf::Vector2i item_coord);
+	static InteractiveType GetInteractTypeAt(const int index) { return interact_map_[index].interactive_type_; }
+
 	static void SetInteractAt(const Interactive& t, const int index) { interact_map_[index] = t; }
 	static void SetInteractSprite(const sf::Texture& t, const int index) { interact_map_[index].sprite_.setTexture(t); }
+	static void TakeItemAtCoords(const sf::Vector2i position);
 
 
-    //Utility
+	//Utility
 	static sf::Vector2i PosToCoords(sf::Vector2f world_pos);
 	static void DrawLevel(sf::RenderTarget& target);
     static void SaveLevelToJson(const std::string& file_name);

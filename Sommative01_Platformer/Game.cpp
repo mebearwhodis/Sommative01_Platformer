@@ -20,10 +20,10 @@ void Game::init()
 	window_.setFramerateLimit(30);
 	window_.setVerticalSyncEnabled(true);
 	window_.setMouseCursorVisible(false);
-	window_.setKeyRepeatEnabled(true);
 
 	// Set up the View
-	view_.setSize(2048, 2048);
+	view_.setSize(2000, 2000);
+	view_.setCenter(1000, 1000);
 
 	// Create Debug limit lines
 	debug_limit_shape_vertical_.setSize(sf::Vector2f(2, 100000));
@@ -51,7 +51,6 @@ void Game::update()
 		}
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::R))
 		{
-			//TODO: Function to reset player position
 			player_.ResetPosition(Level::GetRespawnPoint());
 		}
 	}
@@ -69,6 +68,8 @@ void Game::update()
 
 	// Collision debug lines
 	const sf::Vector2i player_coords = Level::PosToCoords(player_.getPosition());
+	//int player_coords_index = player_coords.y * Level::GetLevelWidth() + player_coords.x;
+
 	constexpr int margin = 1;
 
 	if (Level::GetTileAt(player_coords + sf::Vector2i(1, 0)).solid_ || (player_coords + sf::Vector2i(1, 0)).x >=
@@ -121,25 +122,16 @@ void Game::update()
 		delta += sf::Vector2f((player_.GetPlayerBaseSpeed().x) * speed_factor, 0);
 	}
 
+	//TODO: Find a use for W & S, maybe some kind of powerup/groundpound
+
 	//Capping falling speed
 	if (player_.GetPlayerSpeed().y > 3)
 	{
 		player_.SetPlayerSpeed(sf::Vector2f(player_.GetPlayerSpeed().x, 3));
 	}
 
-	////Maybe use W/UP and S/Down for power-ups/moves (Floating, groundpound, ...)
-	//if (sf::Keyboard::isKeyPressed(sf::Keyboard::W) || sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
-	//{
-	//	player1.SetSprite(player1.up_);
-	//	delta += sf::Vector2f(0, -player_base_speed_ * speed_factor);
-	//}
-	//if (sf::Keyboard::isKeyPressed(sf::Keyboard::S) || sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
-	//{
-	//	player1.SetSprite(player1.down_);
-	//	delta += sf::Vector2f(0, player_base_speed_ * speed_factor);
-	//}
 
-	//Forces - what will modify the acceleration vector
+
 	//Player_velocity is a summ of forces
 
 	//Jump higher if you press longer
@@ -186,6 +178,8 @@ void Game::update()
 
 	//Position is a sum of speeds
 	player_.setPosition(player_.getPosition().x + delta.x, player_.getPosition().y + delta.y);
+
+	//Collision Handler
 	if (player_.getPosition().x >= limit_x_high - (player_.GetPlayerSize().x / 2)) {
 		player_.setPosition(limit_x_high - (player_.GetPlayerSize().x / 2), player_.getPosition().y);
 	}
@@ -202,19 +196,44 @@ void Game::update()
 		player_.SetPlayerVelocity(sf::Vector2f(player_.GetPlayerVelocity().x, 0));
 	}
 
-	//TODO: Virer player_pos_, speed et velocity, assigner à des variables au début, modifier les variables pui Set dans la classe
-	if (Level::GetTileAt(player_coords).deadly_) {
-		std::cout << "u ded" << std::endl;
+
+	//Interactables
+	if (Level::GetInteractAt(player_coords).deadly_) {
 		player_.ResetPosition(Level::GetRespawnPoint());
+		player_.LoseLife();
+	}
+	if (Level::GetInteractAt(player_coords).temporary_ && !Level::GetInteractAt(player_coords).taken_) {
+		Level::TakeItemAtCoords(player_coords);
+	}
+	if (Level::GetInteractAt(player_coords).interactive_type_ == InteractiveType::kCheckpoint) {
+		// Update the current checkpoint to CheckpointUp and set it as the new respawn point
+		Level::SetInteractAt(Interactive{ InteractiveType::kCheckpointUp, false, false, false }, player_coords.y * Level::GetLevelWidth() + player_coords.x);
+		Level::SetInteractSprite(Texture::GetInteractTextureFromType(InteractiveType::kCheckpointUp), player_coords.y * Level::GetLevelWidth() + player_coords.x);
+		Level::SetRespawnPoint(sf::Vector2f(player_coords*TILE_SIZE));
+
+		for (int y = 0; y < Level::GetLevelHeight(); y++)
+		{
+			for (int x = 0; x < Level::GetLevelWidth(); x++)
+			{
+				sf::Vector2i coords(x, y);
+
+				if (Level::GetInteractAt(coords).interactive_type_ == InteractiveType::kCheckpointUp && coords != player_coords) {
+					// Change other CheckpointUp to Checkpoint
+					Level::SetInteractAt(Interactive{ InteractiveType::kCheckpoint, false, false, false }, coords.y * Level::GetLevelWidth() + coords.x);
+					Level::SetInteractSprite(Texture::GetInteractTextureFromType(InteractiveType::kCheckpoint), coords.y* Level::GetLevelWidth() + coords.x);
+				}
+			}
+		}
+	}
+	if (Level::GetInteractAt(player_coords).interactive_type_ == InteractiveType::kStar)
+	{
+		//TODO: Win screen, display score
 	}
 
-	window_.draw(background_sprite_);
-	//Drawing the tiles
-	Level::DrawLevel(window_);
+
+
 
 	//Debugging
-	system("CLS");
-	std::cout << player_.GetGroundedValue() << std::endl;
 	//Visualize limits
 	debug_limit_shape_vertical_.setPosition(limit_x_high, 0);
 	window_.draw(debug_limit_shape_vertical_);
@@ -225,15 +244,44 @@ void Game::update()
 	debug_limit_shape_horizontal_.setPosition(0, limit_y_low);
 	window_.draw(debug_limit_shape_horizontal_);
 
+	system("cls");
+	std::cout << std::to_string(player_coords.x) << "-" << std::to_string(player_coords.y) << std::endl;
+	std::cout << std::to_string(view_.getCenter().x) << "-" << std::to_string(view_.getCenter().y) << std::endl;
+	std::cout << player_.GetLives() << std::endl;
+
 
 	//player_.setPosition(player_.player_pos_.x, player_.player_pos_.y);
-	view_.setCenter(player_.getPosition());
 
+
+	//Stop the view at the edges of the level
+	//Left ---------
+	if (view_.getCenter().x < view_.getSize().x / 2)
+	{
+		view_.setCenter(view_.getSize().x / 2, player_.getPosition().y);
+	}
+	//Right ---------
+	if (view_.getCenter().x + view_.getSize().x / 2 >= TILE_SIZE * Level::GetLevelWidth())
+	{
+		view_.setCenter(TILE_SIZE * Level::GetLevelWidth() - view_.getSize().x / 2, player_.getPosition().y);
+	}
+	//Up ---------
+	if (view_.getCenter().y - view_.getSize().y / 2 <= 0)
+	{
+		view_.setCenter(player_.getPosition().x, view_.getSize().y / 2);
+	}
+	//Down ---------
+	if (view_.getCenter().y + view_.getSize().y / 2 >= TILE_SIZE * Level::GetLevelHeight())
+	{
+		view_.setCenter(player_.getPosition().x, TILE_SIZE * Level::GetLevelHeight() - view_.getSize().y / 2);
+	}
+
+	//Drawing the Level
+
+	window_.draw(background_sprite_);
+	Level::DrawLevel(window_);
 	window_.draw(player_);
-	//player1_hitbox.setPosition(player_bounds.left, player_bounds.top);
-	//window.DrawLevel(player1_hitbox);
-
 	window_.setView(view_);
+
 	// Window Display
 	window_.display();
 

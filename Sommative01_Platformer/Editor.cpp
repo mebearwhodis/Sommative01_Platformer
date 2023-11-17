@@ -1,27 +1,26 @@
 #include "Editor.h"
 
 #include <iostream>
+#include <nlohmann/json.hpp>
 
 
 void Editor::init()
 {
 	Texture::LoadTextures();
-	//View
-	/*sf::View view;
-	view.setSize(1200, 900);*/
+	Level::LoadLevelFromJson("levelOne.json");
+	
 
 
 	// Basic Setup of the window
 	// Vertical sync, framerate
-	window_.create(sf::VideoMode(1200, 900), "Level Editor");
+	window_.create(sf::VideoMode(800, 800), "Level Editor");
 	window_.setVerticalSyncEnabled(false);
 	window_.setFramerateLimit(30);
-
 	window_.setMouseCursorVisible(false);
-	window_.setKeyRepeatEnabled(true);
 
-	background_sprite_.setTexture(Texture::background_texture_);
-	background_sprite_.setOrigin(background_sprite_.getGlobalBounds().width / 2, background_sprite_.getGlobalBounds().height / 2);
+	view_.setSize(2000, 2000);
+	view_.setCenter(1000, 1000);
+
 
 	//Cursor Tile
 	hovered_tile_.setSize(sf::Vector2f(TILE_SIZE, TILE_SIZE));
@@ -29,14 +28,20 @@ void Editor::init()
 	hovered_tile_.setOutlineColor(sf::Color::Magenta);
 	hovered_tile_.setOutlineThickness(-1);
 	hovered_tile_.setOrigin(0, 0);
+
+	background_sprite_.setTexture(Texture::background_texture_);
+	background_sprite_.setOrigin(background_sprite_.getGlobalBounds().width / 2, background_sprite_.getGlobalBounds().height / 2);
+	background_sprite_.scale(2.f, 2.f);
 }
 
 void Editor::update()
 {
+	window_.clear(sf::Color::Black);
+
 	const int level_width = Level::GetLevelWidth();
 	const int level_height = Level::GetLevelHeight();
 
-	window_.clear(sf::Color::Black);
+
 	sf::Event event;
 	while (window_.pollEvent(event)) {
 		if (event.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
@@ -44,7 +49,7 @@ void Editor::update()
 			window_.close();
 		}
 		//---------Key 0
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num0))
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::LShift))
 		{
 			stamp_type_ = !stamp_type_;
 		}
@@ -56,7 +61,7 @@ void Editor::update()
 				selected_tile_ = { TileType::kGrass, true, false };
 			}else
 			{
-				selected_interact_ = { InteractiveType::kCheckpoint, false, false };
+				selected_interact_ = { InteractiveType::kCheckpoint, false, false, false };
 			}
 		}
 		//---------Key 2
@@ -68,7 +73,7 @@ void Editor::update()
 			}
 			else
 			{
-				selected_interact_ = { InteractiveType::kCoin, true, false };
+				selected_interact_ = { InteractiveType::kCoin, true, false, false };
 			}
 		}
 		//---------Key 3
@@ -80,7 +85,7 @@ void Editor::update()
 			}
 			else
 			{
-				selected_interact_ = { InteractiveType::kDiamond, true, false };
+				selected_interact_ = { InteractiveType::kDiamond, true, false, false };
 			}
 		}
 		//---------Key 4
@@ -92,7 +97,7 @@ void Editor::update()
 			}
 			else
 			{
-				selected_interact_ = { InteractiveType::kFloatingSpikes, false, true };
+				selected_interact_ = { InteractiveType::kFloatingSpikes, false, true, false };
 			}
 		}
 		//---------Key 5
@@ -104,7 +109,7 @@ void Editor::update()
 			}
 			else
 			{
-				selected_interact_ = { InteractiveType::kSpikes, false, true };
+				selected_interact_ = { InteractiveType::kSpikes, false, true, false };
 			}
 		}
 		//---------Key 6
@@ -116,7 +121,7 @@ void Editor::update()
 			}
 			else
 			{
-				selected_interact_ = { InteractiveType::kStar, false, false };
+				selected_interact_ = { InteractiveType::kStar, false, false, false };
 			}
 		}
 
@@ -128,7 +133,7 @@ void Editor::update()
 				Level::SetTileAt(Tile(TileType::kEmpty, false, false), i);
 				Level::SetTileSprite(Texture::GetTileTextureFromType(TileType::kEmpty),i);
 
-				Level::SetInteractAt(Interactive(InteractiveType::kEmpty, false, false), i);
+				Level::SetInteractAt(Interactive(InteractiveType::kEmpty, false, false, false), i);
 				Level::SetInteractSprite(Texture::GetTileTextureFromType(TileType::kEmpty),i);
 			}
 		}
@@ -145,10 +150,32 @@ void Editor::update()
 		}
 	}
 
-	//TODO: View that we can move with wasd (or mouse?) zoom, dezoom. Add more sprites, add coins and powerup and mobs (probably in another tilemap?)
+
+	//View
+
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) || sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+	{
+		if (view_.getCenter().x - view_.getSize().x / 2 > 0)
+		{
+			view_.move(-50.f, 0.f);
+		}
+	}
+
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) || sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
+	{
+		if (view_.getCenter().x + view_.getSize().x / 2 < TILE_SIZE * level_width)
+		{
+			view_.move(50.f, 0.f);
+		}
+	}
+
+
+	SetBackgroundPosition(sf::Vector2f(view_.getCenter()));
 
 	const sf::Vector2i mouse_pos = sf::Mouse::getPosition(window_);
-	const sf::Vector2i mouse_tile_coord(mouse_pos.x / TILE_SIZE, mouse_pos.y / TILE_SIZE);
+	sf::Vector2f mouse_world_pos = window_.mapPixelToCoords(mouse_pos);
+	const sf::Vector2i mouse_tile_coord(mouse_world_pos.x / TILE_SIZE, mouse_world_pos.y / TILE_SIZE);
+
 	hovered_tile_.setPosition(static_cast<float>(mouse_tile_coord.x) * TILE_SIZE, static_cast<float>(mouse_tile_coord.y) * TILE_SIZE);
 
 
@@ -183,15 +210,24 @@ void Editor::update()
 				Level::SetTileAt(Tile{ TileType::kEmpty, false, false }, index);
 			}else
 			{
-				Level::SetInteractAt(Interactive{ InteractiveType::kEmpty, false, false }, index);
+				Level::SetInteractAt(Interactive{ InteractiveType::kEmpty, false, false, false }, index);
 			}
 		}
 	}
 
+	window_.setView(view_);
+
+	sf::Font font;
+	font.loadFromFile("data/arial.ttf");
+	std::string current_selection = std::to_string(stamp_type_);
+	sf::Text title(current_selection, font, 30);
+	title.setPosition(280.f, 50.f);
 
 
+	window_.draw(background_sprite_);
 	Level::DrawLevel(window_);
 	window_.draw(hovered_tile_);
+	window_.draw(title);
 
 
 	//window.setView(view);

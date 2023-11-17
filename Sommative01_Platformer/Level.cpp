@@ -4,12 +4,14 @@
 #include <iostream>
 #include <nlohmann/json.hpp>
 
-sf::Vector2f Level::respawn_point_ = sf::Vector2f(TILE_SIZE * 7 + TILE_SIZE / 2, TILE_SIZE * 2);
-int Level::level_width_ = 100;
-int Level::level_height_ = 10;
 
-Tile Level::tile_map_[1000] = {Tile{TileType::kEmpty, false, false}};
-Interactive Level::interact_map_[1000] = {Interactive{InteractiveType::kEmpty, false, false}};
+sf::Vector2f Level::respawn_point_ = sf::Vector2f(1.5f * TILE_SIZE, level_height_ * TILE_SIZE - 1.5f * TILE_SIZE);
+int Level::level_width_ = 100;
+int Level::level_height_ = 16;
+int Level::score_ = 0;
+
+Tile Level::tile_map_[1600] = {Tile{TileType::kEmpty, false, false}};
+Interactive Level::interact_map_[1600] = {Interactive{InteractiveType::kEmpty, false, false, false}};
 
 
 Tile Level::GetTileAt(const sf::Vector2i tile_coord)
@@ -30,6 +32,37 @@ TileType Level::GetTileTypeAt(const sf::Vector2i tile_coord)
 	return tile_map_[tile_coord.y * GetLevelWidth() + tile_coord.x].tile_type_;
 }
 
+Interactive Level::GetInteractAt(const sf::Vector2i item_coord)
+{
+    if (item_coord.x < 0 || item_coord.y < 0 || item_coord.x >= GetLevelWidth() || item_coord.y >= GetLevelHeight())
+    {
+        return { Interactive{InteractiveType::kEmpty,false, false, false} };
+    }
+    return interact_map_[item_coord.y * GetLevelWidth() + item_coord.x];
+}
+
+InteractiveType Level::GetInteractTypeAt(const sf::Vector2i item_coord)
+{
+    if (item_coord.x < 0 || item_coord.y < 0 || item_coord.x >= GetLevelWidth() || item_coord.y >= GetLevelHeight())
+    {
+        return InteractiveType::kEmpty;
+    }
+    return interact_map_[item_coord.y * GetLevelWidth() + item_coord.x].interactive_type_;
+}
+
+void Level::TakeItemAtCoords(const sf::Vector2i position)
+{
+	const Interactive temp_item = interact_map_[position.y * level_width_ + position.x];
+    if(temp_item.interactive_type_ == InteractiveType::kCoin && !temp_item.taken_)
+    {
+        AugmentScore(10);
+    }else if(temp_item.interactive_type_ == InteractiveType::kDiamond && !temp_item.taken_)
+    {
+        AugmentScore(50);
+    }
+	interact_map_[position.y * level_width_ + position.x].taken_ = true;
+}
+
 sf::Vector2i Level::PosToCoords(const sf::Vector2f world_pos)
 {
 	sf::Vector2i coord;
@@ -38,7 +71,6 @@ sf::Vector2i Level::PosToCoords(const sf::Vector2f world_pos)
 	return coord;
 }
 
-//sprite_.setTexture(Texture::GetTileTextureFromType(type));
 void Level::DrawLevel(sf::RenderTarget& target)
 {
 	for (int y = 0; y < GetLevelHeight(); y++)
