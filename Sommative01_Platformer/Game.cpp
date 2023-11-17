@@ -8,7 +8,7 @@
 
 
 
-void Game::init(const Level& level, const Texture& texture)
+void Game::init(const Level& level)
 {
 	//selected_tile_ = Tile(TileType::kEmpty, false, false);
 	//player_pos_ = Level::GetStartingPoint();
@@ -34,7 +34,7 @@ void Game::init(const Level& level, const Texture& texture)
 	player_.ResetPosition(level.GetRespawnPoint());
 }
 
-void Game::update(Level level, const Texture& texture)
+void Game::update(Level level)
 {
 	sf::Event event;
 	while (window_.pollEvent(event))
@@ -62,7 +62,7 @@ void Game::update(Level level, const Texture& texture)
 	level.SetBackgroundPosition(sf::Vector2f(player_.getPosition().x, player_.getPosition().y));
 
 	// Collision debug lines
-	const sf::Vector2i player_coords = level.PosToCoords(player_.getPosition());
+	const sf::Vector2i player_coords = Level::PosToCoords(player_.getPosition());
 	constexpr int margin = 1;
 
 	if (level.GetTileAt(player_coords + sf::Vector2i(1, 0)).solid_ || (player_coords + sf::Vector2i(1, 0)).x >= level.GetLevelWidth()) {

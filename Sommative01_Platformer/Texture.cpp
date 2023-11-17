@@ -2,6 +2,16 @@
 
 // Definitions for static members
 
+sf::Texture Texture::empty_;
+sf::Texture Texture::dirt_;
+sf::Texture Texture::grass_;
+sf::Texture Texture::start_;
+sf::Texture Texture::end_;
+
+sf::Texture Texture::background_texture_;
+
+std::map<TileType, sf::Texture> Texture::type_to_texture_;
+
 void Texture::LoadTextures() {
     empty_.loadFromFile("data/sprites/tiles/empty.png");
     grass_.loadFromFile("data/sprites/tiles/grassMid.png");

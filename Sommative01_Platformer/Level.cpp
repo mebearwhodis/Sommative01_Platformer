@@ -4,14 +4,15 @@
 #include <iostream>
 #include <nlohmann/json.hpp>
 
-Level::Level(const sf::Vector2f starting_point, const int level_width, const int level_height, const sf::Texture& background_texture)
+Tile Level::tile_map_[500] = {Tile{TileType::kEmpty,false, false}};
+
+Level::Level(const sf::Vector2f starting_point, const int level_width, const int level_height)
 {
 	respawn_point_ = starting_point;
 	level_width_ = level_width;
 	level_height_ = level_height;
-	background_sprite_.setTexture(background_texture);
+	background_sprite_.setTexture(Texture::GetBackgroundTexture());
 	background_sprite_.setOrigin(background_sprite_.getGlobalBounds().width / 2, background_sprite_.getGlobalBounds().height / 2);
-	tile_map_[level_width * level_height];
 
 }
 
@@ -24,15 +25,24 @@ Tile Level::GetTileAt(const sf::Vector2i tile_coord) const
 	return tile_map_[tile_coord.y * GetLevelWidth() + tile_coord.x];
 }
 
+TileType Level::GetTileTypeAt(const sf::Vector2i tile_coord) const
+{
+	if (tile_coord.x < 0 || tile_coord.y < 0 || tile_coord.x >= GetLevelWidth() || tile_coord.y >= GetLevelHeight())
+	{
+		return TileType::kEmptySolid;
+	}
+	return tile_map_[tile_coord.y * GetLevelWidth() + tile_coord.x].tile_type_;
+}
+
 sf::Vector2i Level::PosToCoords(const sf::Vector2f world_pos)
 {
 	sf::Vector2i coord;
-	coord.x = std::floor(world_pos.x / TILE_SIZE);
-	coord.y = std::floor(world_pos.y / TILE_SIZE);
+	coord.x = static_cast<int>(std::floor(world_pos.x / TILE_SIZE));
+	coord.y = static_cast<int>(std::floor(world_pos.y / TILE_SIZE));
 	return coord;
 }
 
-void Level::DrawLevel(sf::RenderTarget& target)
+void Level::DrawLevel(sf::RenderTarget& target) const
 {
 	for (int y = 0; y < level_height_; y++)
 	{
@@ -40,17 +50,19 @@ void Level::DrawLevel(sf::RenderTarget& target)
 		{
 			Tile& current_tile = tile_map_[x + y * level_width_];
 			// Set the position of the sprite
-			current_tile.sprite_.setPosition(x * TILE_SIZE, y * TILE_SIZE);
+			current_tile.sprite_.setPosition(static_cast<float>(x) * TILE_SIZE, static_cast<float>(y) * TILE_SIZE);
 			if (current_tile.tile_type_ != TileType::kEmpty && current_tile.tile_type_ != TileType::kEmptySolid)
 			{
 				// Draw the sprite
 				target.draw(current_tile.sprite_);
+				
 			}
 		}
 	}
 }
 
-void Level::SaveLevelToJson(const std::string& file_name) {
+void Level::SaveLevelToJson(const std::string& file_name) const
+{
 	nlohmann::json json_level;
 	json_level["tiles"] = nlohmann::json::array();
 	for (int y = 0; y < level_height_; y++) {
@@ -69,7 +81,7 @@ void Level::SaveLevelToJson(const std::string& file_name) {
 	file << json_level.dump(4); 
 }
 
-void Level::LoadLevelFromJson(const std::string& file_path, Texture texture) {
+void Level::LoadLevelFromJson(const std::string& file_path) {
 	std::ifstream file(file_path);
 	if (file.is_open()) {
 		nlohmann::json json_level;
@@ -80,7 +92,7 @@ void Level::LoadLevelFromJson(const std::string& file_path, Texture texture) {
 			tile_map_[index].tile_type_ = static_cast<TileType>(tile["type"]);
 			tile_map_[index].solid_ = tile["solid"];
 			tile_map_[index].deadly_ = tile["deadly"];
-			tile_map_[index].sprite_.setTexture(texture.GetTextureMap().at(tile_map_[index].tile_type_));
+			tile_map_[index].sprite_.setTexture(Texture::GetTextureFromType(tile_map_[index].tile_type_));
 			index++;
 		}
 	}

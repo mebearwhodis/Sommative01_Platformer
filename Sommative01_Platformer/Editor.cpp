@@ -1,7 +1,6 @@
 #include "Editor.h"
 
-#include "Level.h"
-#include "Texture.h"
+#include <iostream>
 
 
 void Editor::init()
@@ -30,22 +29,31 @@ void Editor::init()
 	hovered_tile_.setOrigin(0, 0);
 }
 
-void Editor::update(Level level, Texture texture)
+void Editor::update(const Level& level)
 {
+	window_.clear(sf::Color::Black);
+	Texture::LoadTextures();
 	sf::Event event;
 	while (window_.pollEvent(event)) {
 		if (event.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
 		{
 			window_.close();
 		}
-
+		if (sf::Keyboard::isKeyPressed((sf::Keyboard::Num1)))
+		{
+			selected_tile_type_ = TileType::kGrass;
+		}
+		if (sf::Keyboard::isKeyPressed((sf::Keyboard::Num2)))
+		{
+			selected_tile_type_ = TileType::kDirt;
+		}
 		//Resets the tiles
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::T))
 		{
 			for (int i = 0; i < level.GetLevelWidth() * level.GetLevelHeight(); ++i)
 			{
-				level.SetTileAt(Tile(TileType::kEmpty, false, false), i);
-				//level.SetTileSprite(texture.GetTextureMap()[level.GetTileAt(i).tile_type_), i);
+				Level::SetTileAt(Tile(TileType::kEmpty, false, false), i);
+				//level.SetTileSprite(texture.GetTextureMap().at(level.GetTileAt(i).tile_type_), i);
 			}
 		}
 		// Saves the level
@@ -57,7 +65,7 @@ void Editor::update(Level level, Texture texture)
 		// Loads the level
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::F9))
 		{
-			level.LoadLevelFromJson("levelOne.json", texture);
+			Level::LoadLevelFromJson("levelOne.json");
 		}
 	}
 
@@ -67,16 +75,10 @@ void Editor::update(Level level, Texture texture)
 
 	const sf::Vector2i mouse_pos = sf::Mouse::getPosition(window_);
 	const sf::Vector2i mouse_tile_coord(mouse_pos.x / TILE_SIZE, mouse_pos.y / TILE_SIZE);
-	hovered_tile_.setPosition(mouse_tile_coord.x * TILE_SIZE, mouse_tile_coord.y * TILE_SIZE);
+	hovered_tile_.setPosition(static_cast<float>(mouse_tile_coord.x) * TILE_SIZE, static_cast<float>(mouse_tile_coord.y) * TILE_SIZE);
 
-	if (sf::Keyboard::isKeyPressed((sf::Keyboard::Num1)))
-	{
-		selected_tile_type_ = TileType::kGrass;
-	}
-	if (sf::Keyboard::isKeyPressed((sf::Keyboard::Num2)))
-	{
-		selected_tile_type_ = TileType::kDirt;
-	}
+
+
 
 	
 	//Editor interaction
@@ -84,9 +86,12 @@ void Editor::update(Level level, Texture texture)
 	{
 		if (mouse_tile_coord.x >= 0 && mouse_tile_coord.x < level_width && mouse_tile_coord.y >= 0 && mouse_tile_coord.y < level_height)
 		{
+			std::cout << "Type: " << static_cast<int>(level.GetTileTypeAt(mouse_tile_coord)) << std::endl;
 			const int index = mouse_tile_coord.y * level_width + mouse_tile_coord.x;
-			level.SetTileTypeAt(selected_tile_type_, index);
-			level.SetTileSprite(texture.GetTextureMap().at(level.GetTileAt(index).tile_type_), index);
+			Level::SetTileTypeAt(selected_tile_type_, index);
+			Level::SetTileSprite(Texture::GetTextureFromType(selected_tile_type_),index);
+
+			std::cout << "Type: " << static_cast<int>(level.GetTileTypeAt(mouse_tile_coord)) << std::endl << "----------------" << std::endl;
 		}
 	}
 
@@ -95,16 +100,12 @@ void Editor::update(Level level, Texture texture)
 		if (mouse_tile_coord.x >= 0 && mouse_tile_coord.x < level_width && mouse_tile_coord.y >= 0 && mouse_tile_coord.y < level_height)
 		{
 			const int index = mouse_tile_coord.y * level_width + mouse_tile_coord.x;
-			level.SetTileTypeAt(TileType::kEmpty, index);
-			level.SetTileSprite(texture.GetTextureMap().at(level.GetTileAt(index).tile_type_), index);
+			Level::SetTileAt(Tile{ TileType::kEmpty, false, false }, index);
 		}
 	}
 
 
 
-	// Visualize limits
-
-	window_.clear(sf::Color::Black);
 	level.DrawLevel(window_);
 	window_.draw(hovered_tile_);
 

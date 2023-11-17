@@ -15,12 +15,14 @@ class Level {
     int level_width_;
     int level_height_;
     sf::Sprite background_sprite_;
-    Tile tile_map_[500];
+
+    //I'd rather not use a static tile_map, but it's the only way I got the game to work and I only have one level for now so it's a temporary fix
+    static Tile tile_map_[500];
 
 public:
 
     //Constructor
-    Level(sf::Vector2f starting_point, int level_width, int level_height, const sf::Texture& background_texture);
+    Level(sf::Vector2f starting_point, int level_width, int level_height);
 
     //Getters & Setters
     sf::Vector2f GetRespawnPoint() const { return respawn_point_; }
@@ -29,14 +31,21 @@ public:
     int GetLevelWidth() const { return level_width_; }
     int GetLevelHeight() const { return level_height_; }
 
-	Tile GetTileMap() { return *tile_map_; }
+	static Tile GetTileMap() { return *tile_map_; }
 
     Tile GetTileAt(sf::Vector2i tile_coord) const;
-    Tile GetTileAt(const int index) { return tile_map_[index]; }
+	static Tile GetTileAt(const int index) { return tile_map_[index]; }
+    TileType GetTileTypeAt(sf::Vector2i tile_coord) const;
+	static TileType GetTileTypeAt(const int index) { return tile_map_[index].tile_type_; }
 
-    void SetTileAt(const Tile& t, const int index) { tile_map_[index] = t; }
-    void SetTileTypeAt(const TileType t, const int index) { tile_map_[index].tile_type_ = t; }
-    void SetTileSprite(const sf::Texture& t, const int index) { tile_map_[index].sprite_.setTexture(t); }
+	static void SetTileAt(const Tile& t, const int index)
+    {
+	    tile_map_[index] = t;
+        tile_map_[index].sprite_.setTexture(Texture::GetTextureFromType(t.tile_type_));
+    }
+
+	static void SetTileTypeAt(const TileType t, const int index) { tile_map_[index].tile_type_ = t; }
+	static void SetTileSprite(const sf::Texture& t, const int index) { tile_map_[index].sprite_.setTexture(t); }
 
 
     sf::Sprite GetBackgroundSprite() const { return background_sprite_; }
@@ -46,9 +55,9 @@ public:
 
     //Utility
 	static sf::Vector2i PosToCoords(sf::Vector2f world_pos);
-    void DrawLevel(sf::RenderTarget& target);
-    void SaveLevelToJson(const std::string& file_name);
-    void LoadLevelFromJson(const std::string& file_path, Texture texture);
+    void DrawLevel(sf::RenderTarget& target) const;
+    void SaveLevelToJson(const std::string& file_name) const;
+	static void LoadLevelFromJson(const std::string& file_path);
 };
 
 // Utiliser le std::_Erase_remove_if(VECTEUR, DEBUT, FIN)

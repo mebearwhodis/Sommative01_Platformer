@@ -1,19 +1,19 @@
+
+#include <SFML/Graphics.hpp>
+#include "ModePicker.h"
+#include "Texture.h"
+#include "Tile.h"
+#include "Level.h"
 #include "Editor.h"
 #include "Game.h"
-#include "ModePicker.h"
-#include "Tile.h"
-#include <SFML/Graphics.hpp>
 
-#include "Level.h"
-#include "Texture.h"
 
 int main()
 {
 	//ModePicker mode_picker;
 	//GameMode answer = mode_picker.ModeChoice();
-	Texture textures;
-	textures.LoadTextures();
-	Level level_one(sf::Vector2f(128 * 7 + 64, 128 * 2), 100, 5, textures.GetBackgroundTexture());
+	Texture::LoadTextures();
+	const Level level_one(sf::Vector2f(128 * 7 + 64, 128 * 2), 100, 5);
 
 	//switch (answer)
 	//{
@@ -35,7 +35,7 @@ int main()
 
 		while (editor.window_.isOpen())
 		{
-			editor.update(level_one, textures);
+			editor.update(level_one);
 		}
 	//	break;
 	//}

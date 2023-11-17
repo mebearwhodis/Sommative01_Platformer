@@ -29,12 +29,12 @@ GameMode ModePicker::ModeChoice()
 				if (event.type == sf::Event::MouseButtonPressed) {
 					const sf::Vector2i mouse_pos = sf::Mouse::getPosition(window_);
 
-					if (game_mode.getGlobalBounds().contains(mouse_pos.x, mouse_pos.y)) {
+					if (game_mode.getGlobalBounds().contains(static_cast<float>(mouse_pos.x), static_cast<float>(mouse_pos.y))) {
 						selected_mode = GameMode::kGame;
 						return selected_mode;
 
 					}
-					else if (editor_mode.getGlobalBounds().contains(mouse_pos.x, mouse_pos.y)) {
+					else if (editor_mode.getGlobalBounds().contains(static_cast<float>(mouse_pos.x), static_cast<float>(mouse_pos.y))) {
 						selected_mode = GameMode::kEditor;
 						return selected_mode;
 					}
