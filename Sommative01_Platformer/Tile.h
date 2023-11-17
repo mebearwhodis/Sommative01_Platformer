@@ -7,13 +7,7 @@ enum class TileType {
     kEmpty = 0,
     kEmptySolid,
     kGrass,
-    kDirt,
-    // kLadder,
-    // kSpikes,
-    // kNPC,
-    kStart,
-    kCheckpoint,
-    kEnd
+    kDirt
 };
 
 class Tile

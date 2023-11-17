@@ -6,7 +6,6 @@
 void Editor::init()
 {
 	Texture::LoadTextures();
-
 	//View
 	/*sf::View view;
 	view.setSize(1200, 900);*/
@@ -20,7 +19,6 @@ void Editor::init()
 
 	window_.setMouseCursorVisible(false);
 	window_.setKeyRepeatEnabled(true);
-	Level::LoadLevelFromJson("levelOne.json");
 
 	background_sprite_.setTexture(Texture::background_texture_);
 	background_sprite_.setOrigin(background_sprite_.getGlobalBounds().width / 2, background_sprite_.getGlobalBounds().height / 2);
@@ -35,6 +33,9 @@ void Editor::init()
 
 void Editor::update()
 {
+	const int level_width = Level::GetLevelWidth();
+	const int level_height = Level::GetLevelHeight();
+
 	window_.clear(sf::Color::Black);
 	sf::Event event;
 	while (window_.pollEvent(event)) {
@@ -42,21 +43,93 @@ void Editor::update()
 		{
 			window_.close();
 		}
-		if (sf::Keyboard::isKeyPressed((sf::Keyboard::Num1)))
+		//---------Key 0
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num0))
 		{
-			selected_tile_ = { TileType::kGrass, true, false };
+			stamp_type_ = !stamp_type_;
 		}
-		if (sf::Keyboard::isKeyPressed((sf::Keyboard::Num2)))
+		//---------Key 1
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num1))
 		{
-			selected_tile_ = { TileType::kDirt, true, true };
+			if(stamp_type_)
+			{
+				selected_tile_ = { TileType::kGrass, true, false };
+			}else
+			{
+				selected_interact_ = { InteractiveType::kCheckpoint, false, false };
+			}
 		}
+		//---------Key 2
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num2))
+		{
+			if (stamp_type_)
+			{
+				selected_tile_ = { TileType::kDirt, true, true };
+			}
+			else
+			{
+				selected_interact_ = { InteractiveType::kCoin, true, false };
+			}
+		}
+		//---------Key 3
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num3))
+		{
+			if (stamp_type_)
+			{
+				selected_tile_ = { TileType::kGrass, true, false };
+			}
+			else
+			{
+				selected_interact_ = { InteractiveType::kDiamond, true, false };
+			}
+		}
+		//---------Key 4
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num4))
+		{
+			if (stamp_type_)
+			{
+				selected_tile_ = { TileType::kGrass, true, false };
+			}
+			else
+			{
+				selected_interact_ = { InteractiveType::kFloatingSpikes, false, true };
+			}
+		}
+		//---------Key 5
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num5))
+		{
+			if (stamp_type_)
+			{
+				selected_tile_ = { TileType::kGrass, true, false };
+			}
+			else
+			{
+				selected_interact_ = { InteractiveType::kSpikes, false, true };
+			}
+		}
+		//---------Key 6
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num6))
+		{
+			if (stamp_type_)
+			{
+				selected_tile_ = { TileType::kGrass, true, false };
+			}
+			else
+			{
+				selected_interact_ = { InteractiveType::kStar, false, false };
+			}
+		}
+
 		//Resets the tiles
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::T))
 		{
-			for (int i = 0; i < Level::GetLevelWidth() * Level::GetLevelHeight(); ++i)
+			for (int i = 0; i < level_width * level_height; ++i)
 			{
 				Level::SetTileAt(Tile(TileType::kEmpty, false, false), i);
-				Level::SetTileSprite(Texture::GetTextureFromType(TileType::kEmpty),i);
+				Level::SetTileSprite(Texture::GetTileTextureFromType(TileType::kEmpty),i);
+
+				Level::SetInteractAt(Interactive(InteractiveType::kEmpty, false, false), i);
+				Level::SetInteractSprite(Texture::GetTileTextureFromType(TileType::kEmpty),i);
 			}
 		}
 		// Saves the level
@@ -73,8 +146,6 @@ void Editor::update()
 	}
 
 	//TODO: View that we can move with wasd (or mouse?) zoom, dezoom. Add more sprites, add coins and powerup and mobs (probably in another tilemap?)
-	const int level_width = Level::GetLevelWidth();
-	const int level_height = Level::GetLevelHeight();
 
 	const sf::Vector2i mouse_pos = sf::Mouse::getPosition(window_);
 	const sf::Vector2i mouse_tile_coord(mouse_pos.x / TILE_SIZE, mouse_pos.y / TILE_SIZE);
@@ -89,12 +160,16 @@ void Editor::update()
 	{
 		if (mouse_tile_coord.x >= 0 && mouse_tile_coord.x < level_width && mouse_tile_coord.y >= 0 && mouse_tile_coord.y < level_height)
 		{
-			std::cout << "Type: " << static_cast<int>(Level::GetTileTypeAt(mouse_tile_coord)) << std::endl;
 			const int index = mouse_tile_coord.y * level_width + mouse_tile_coord.x;
-			Level::SetTileAt(selected_tile_, index);
-			Level::SetTileSprite(Texture::GetTextureFromType(selected_tile_.tile_type_),index);
-
-			std::cout << "Type: " << static_cast<int>(Level::GetTileTypeAt(mouse_tile_coord)) << std::endl << "----------------" << std::endl;
+			if (stamp_type_)
+			{
+				Level::SetTileAt(selected_tile_, index);
+				Level::SetTileSprite(Texture::GetTileTextureFromType(selected_tile_.tile_type_), index);
+			}else
+			{
+				Level::SetInteractAt(selected_interact_, index);
+				Level::SetInteractSprite(Texture::GetInteractTextureFromType(selected_interact_.interactive_type_), index);
+			}
 		}
 	}
 
@@ -103,7 +178,13 @@ void Editor::update()
 		if (mouse_tile_coord.x >= 0 && mouse_tile_coord.x < level_width && mouse_tile_coord.y >= 0 && mouse_tile_coord.y < level_height)
 		{
 			const int index = mouse_tile_coord.y * level_width + mouse_tile_coord.x;
-			Level::SetTileAt(Tile{ TileType::kEmpty, false, false }, index);
+			if(stamp_type_)
+			{
+				Level::SetTileAt(Tile{ TileType::kEmpty, false, false }, index);
+			}else
+			{
+				Level::SetInteractAt(Interactive{ InteractiveType::kEmpty, false, false }, index);
+			}
 		}
 	}
 

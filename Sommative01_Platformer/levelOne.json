@@ -1,4 +1,6006 @@
 {
+    "interactives": [
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": true,
+            "type": 3
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": true,
+            "type": 3
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": true,
+            "type": 3
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": true,
+            "type": 3
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": true,
+            "taken": false,
+            "temporary": false,
+            "type": 4
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 1
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 1
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 1
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": true,
+            "type": 2
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": true,
+            "type": 2
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "taken": false,
+            "temporary": false,
+            "type": 0
+        }
+    ],
     "tiles": [
         {
             "deadly": false,
@@ -511,6 +6513,2541 @@
             "type": 0
         },
         {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": true,
+            "type": 2
+        },
+        {
+            "deadly": false,
+            "solid": true,
+            "type": 2
+        },
+        {
+            "deadly": false,
+            "solid": true,
+            "type": 2
+        },
+        {
+            "deadly": false,
+            "solid": true,
+            "type": 2
+        },
+        {
+            "deadly": false,
+            "solid": true,
+            "type": 2
+        },
+        {
+            "deadly": false,
+            "solid": true,
+            "type": 2
+        },
+        {
+            "deadly": false,
+            "solid": true,
+            "type": 2
+        },
+        {
+            "deadly": false,
+            "solid": true,
+            "type": 2
+        },
+        {
+            "deadly": false,
+            "solid": true,
+            "type": 2
+        },
+        {
+            "deadly": false,
+            "solid": true,
+            "type": 2
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": true,
+            "solid": true,
+            "type": 3
+        },
+        {
+            "deadly": true,
+            "solid": true,
+            "type": 3
+        },
+        {
+            "deadly": true,
+            "solid": true,
+            "type": 3
+        },
+        {
+            "deadly": true,
+            "solid": true,
+            "type": 3
+        },
+        {
+            "deadly": true,
+            "solid": true,
+            "type": 3
+        },
+        {
+            "deadly": true,
+            "solid": true,
+            "type": 3
+        },
+        {
+            "deadly": true,
+            "solid": true,
+            "type": 3
+        },
+        {
+            "deadly": true,
+            "solid": true,
+            "type": 3
+        },
+        {
+            "deadly": true,
+            "solid": true,
+            "type": 3
+        },
+        {
+            "deadly": true,
+            "solid": true,
+            "type": 3
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": false,
+            "solid": false,
+            "type": 0
+        },
+        {
+            "deadly": true,
+            "solid": true,
+            "type": 3
+        },
+        {
+            "deadly": true,
+            "solid": true,
+            "type": 3
+        },
+        {
+            "deadly": true,
+            "solid": true,
+            "type": 3
+        },
+        {
+            "deadly": true,
+            "solid": true,
+            "type": 3
+        },
+        {
+            "deadly": true,
+            "solid": true,
+            "type": 3
+        },
+        {
+            "deadly": true,
+            "solid": true,
+            "type": 3
+        },
+        {
+            "deadly": true,
+            "solid": true,
+            "type": 3
+        },
+        {
+            "deadly": true,
+            "solid": true,
+            "type": 3
+        },
+        {
+            "deadly": true,
+            "solid": true,
+            "type": 3
+        },
+        {
             "deadly": true,
             "solid": true,
             "type": 3
@@ -1011,11 +9548,6 @@
             "type": 0
         },
         {
-            "deadly": true,
-            "solid": true,
-            "type": 3
-        },
-        {
             "deadly": false,
             "solid": false,
             "type": 0
@@ -1499,31 +10031,6 @@
             "deadly": false,
             "solid": false,
             "type": 0
-        },
-        {
-            "deadly": false,
-            "solid": true,
-            "type": 2
-        },
-        {
-            "deadly": false,
-            "solid": true,
-            "type": 2
-        },
-        {
-            "deadly": false,
-            "solid": true,
-            "type": 2
-        },
-        {
-            "deadly": false,
-            "solid": true,
-            "type": 2
-        },
-        {
-            "deadly": false,
-            "solid": true,
-            "type": 2
         },
         {
             "deadly": false,
@@ -1544,21 +10051,16 @@
             "deadly": false,
             "solid": false,
             "type": 0
-        },
-        {
-            "deadly": false,
-            "solid": true,
-            "type": 2
         },
         {
             "deadly": false,
-            "solid": true,
-            "type": 2
+            "solid": false,
+            "type": 0
         },
         {
             "deadly": false,
-            "solid": true,
-            "type": 2
+            "solid": false,
+            "type": 0
         },
         {
             "deadly": false,
@@ -2002,63 +10504,63 @@
         },
         {
             "deadly": false,
-            "solid": true,
-            "type": 2
+            "solid": false,
+            "type": 0
         },
         {
             "deadly": false,
-            "solid": true,
-            "type": 2
+            "solid": false,
+            "type": 0
         },
         {
             "deadly": false,
-            "solid": true,
-            "type": 2
+            "solid": false,
+            "type": 0
         },
         {
             "deadly": false,
-            "solid": true,
-            "type": 2
+            "solid": false,
+            "type": 0
         },
         {
             "deadly": false,
-            "solid": true,
-            "type": 2
+            "solid": false,
+            "type": 0
         },
         {
             "deadly": false,
-            "solid": true,
-            "type": 2
+            "solid": false,
+            "type": 0
         },
         {
             "deadly": false,
-            "solid": true,
-            "type": 2
+            "solid": false,
+            "type": 0
         },
         {
             "deadly": false,
-            "solid": true,
-            "type": 2
+            "solid": false,
+            "type": 0
         },
         {
             "deadly": false,
-            "solid": true,
-            "type": 2
+            "solid": false,
+            "type": 0
         },
         {
             "deadly": false,
-            "solid": true,
-            "type": 2
+            "solid": false,
+            "type": 0
         },
         {
             "deadly": false,
-            "solid": true,
-            "type": 2
+            "solid": false,
+            "type": 0
         },
         {
             "deadly": false,
-            "solid": true,
-            "type": 2
+            "solid": false,
+            "type": 0
         },
         {
             "deadly": false,

@@ -16,7 +16,8 @@ class Level {
     static int level_height_;
 
     //I'd rather not use a static tile_map, but it's the only way I got the game to work and I only have one level for now so it's a temporary workaround
-    static Tile tile_map_[500];
+    static Tile tile_map_[1000];
+    static Interactive interact_map_[1000];
 
 public:
 
@@ -35,9 +36,11 @@ public:
 	static TileType GetTileTypeAt(const int index) { return tile_map_[index].tile_type_; }
 
 	static void SetTileAt(const Tile& t, const int index) { tile_map_[index] = t; }
-
 	static void SetTileTypeAt(const TileType t, const int index) { tile_map_[index].tile_type_ = t; }
 	static void SetTileSprite(const sf::Texture& t, const int index) { tile_map_[index].sprite_.setTexture(t); }
+
+	static void SetInteractAt(const Interactive& t, const int index) { interact_map_[index] = t; }
+	static void SetInteractSprite(const sf::Texture& t, const int index) { interact_map_[index].sprite_.setTexture(t); }
 
 
     //Utility

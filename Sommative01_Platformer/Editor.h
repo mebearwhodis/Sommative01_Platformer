@@ -12,7 +12,11 @@ public:
 	sf::RectangleShape base_tile_;
 	sf::RectangleShape hovered_tile_;
 
+	//Type of thing to add (Tile/Interactable)
+	bool stamp_type_ = true;
+
 	Tile selected_tile_ = {TileType::kEmpty, false, false};
+	Interactive selected_interact_ = {InteractiveType::kEmpty, false, false};
 	//Window
 	sf::RenderWindow window_;
 	sf::View view_;

@@ -10,37 +10,55 @@
 
 int main()
 {
-	ModePicker mode_picker;
-	const GameMode answer = mode_picker.ModeChoice();
-
-
-	switch (answer)
+	//Game:
+	Game game;
+	game.init();
+	while (game.window_.isOpen())
 	{
-	case(GameMode::kGame):
-	{
-		Game game;
-		game.init();
-		while (game.window_.isOpen())
-		{
-			game.update();
-		}
-		break;
-	}
-	case GameMode::kEditor:
-	{
-		Editor editor;
-		editor.init();
-
-		while (editor.window_.isOpen())
-		{
-			editor.update();
-		}
-		break;
+		game.update();
 	}
 
-	case GameMode::kNone:
-		break;
-	}
+	//Editor:
+	//Editor editor;
+	//editor.init();
 
-	return 0;
+	//while (editor.window_.isOpen())
+	//{
+	//	editor.update();
+	//}
+
+	//Both:
+	//ModePicker mode_picker;
+	//const GameMode answer = mode_picker.ModeChoice();
+
+
+	//switch (answer)
+	//{
+	//case(GameMode::kGame):
+	//{
+	//Game game;
+	//	game.init();
+	//	while (game.window_.isOpen())
+	//	{
+	//		game.update();
+	//	}
+	//	break;
+	//}
+	//case GameMode::kEditor:
+	//{
+	//	Editor editor;
+	//	editor.init();
+
+	//	while (editor.window_.isOpen())
+	//	{
+	//		editor.update();
+	//	}
+	//	break;
+	//}
+
+	//case GameMode::kNone:
+	//	break;
+	//}
+
+	//return 0;
 };

@@ -5,7 +5,7 @@ Player::Player(const std::string& textures_folder, const float sprint_modifier, 
 {
 	//LivingEntity::LivingEntity(); //call back to parent constructor
 
-	player_size_ = sf::Vector2f(30, 30);
+	player_size_ = sf::Vector2f(134, 190);
 
 	player_speed_ = sf::Vector2f(5, 0);
 	player_base_speed_ = sf::Vector2f(10, 0);

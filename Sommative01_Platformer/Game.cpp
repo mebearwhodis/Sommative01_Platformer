@@ -16,7 +16,7 @@ void Game::init()
 	//player_pos_ = Level::GetStartingPoint();
 
 	// Set up the Window
-	window_.create(sf::VideoMode(1600, 1200), "The Game");
+	window_.create(sf::VideoMode(800, 800), "The Game");
 	window_.setFramerateLimit(30);
 	window_.setVerticalSyncEnabled(true);
 	window_.setMouseCursorVisible(false);
@@ -37,6 +37,7 @@ void Game::init()
 
 	background_sprite_.setTexture(Texture::background_texture_);
 	background_sprite_.setOrigin(background_sprite_.getGlobalBounds().width / 2, background_sprite_.getGlobalBounds().height / 2);
+	background_sprite_.scale(2.f, 2.f);
 }
 
 void Game::update()
@@ -64,7 +65,7 @@ void Game::update()
 	player_.SetJumpForce(sf::Vector2f(0.0f, 0.0f));
 	player_.SetMoveForce(sf::Vector2f(0.0f, 0.0f));
 
-	SetBackgroundPosition(sf::Vector2f(player_.getPosition().x, player_.getPosition().y));
+	SetBackgroundPosition(sf::Vector2f(view_.getCenter()));
 
 	// Collision debug lines
 	const sf::Vector2i player_coords = Level::PosToCoords(player_.getPosition());
@@ -232,7 +233,7 @@ void Game::update()
 	//player1_hitbox.setPosition(player_bounds.left, player_bounds.top);
 	//window.DrawLevel(player1_hitbox);
 
-	//window_.setView(view_);
+	window_.setView(view_);
 	// Window Display
 	window_.display();
 

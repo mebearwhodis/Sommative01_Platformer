@@ -16,5 +16,6 @@ LivingEntity::LivingEntity(const std::string& textures_folder, const float sprin
 	is_sprinting_ = false;
 
 	SetSprite(right_);
+	this->sprite_.setOrigin(0, -0.5f*GetSprite().getGlobalBounds().height);
 	setOrigin(GetSprite().getGlobalBounds().width / 2, GetSprite().getGlobalBounds().height);
 }
