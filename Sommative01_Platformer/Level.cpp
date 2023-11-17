@@ -9,6 +9,7 @@ sf::Vector2f Level::respawn_point_ = sf::Vector2f(1.5f * TILE_SIZE, level_height
 int Level::level_width_ = 100;
 int Level::level_height_ = 16;
 int Level::score_ = 0;
+int Level::lives_ = 10;
 
 Tile Level::tile_map_[1600] = {Tile{TileType::kEmpty, false, false}};
 Interactive Level::interact_map_[1600] = {Interactive{InteractiveType::kEmpty, false, false, false}};
@@ -79,17 +80,17 @@ void Level::DrawLevel(sf::RenderTarget& target)
 		{
 			Tile& current_tile = tile_map_[x + y * GetLevelWidth()];
 			Interactive& current_interactive = interact_map_[x + y * GetLevelWidth()];
-			// Set the position of the sprite
+			//Set the position of the sprite
 			if (current_tile.tile_type_ != TileType::kEmpty && current_tile.tile_type_ != TileType::kEmptySolid)
 			{
-				// Draw the sprite
+				//Draw the sprite
 				current_tile.sprite_.setPosition(static_cast<float>(x) * TILE_SIZE, static_cast<float>(y) * TILE_SIZE);
 				target.draw(current_tile.sprite_);
 				
 			}
 			if (current_interactive.interactive_type_ != InteractiveType::kEmpty && !current_interactive.taken_)
 			{
-				// Draw the sprite
+				//Draw the sprite
 				current_interactive.sprite_.setPosition(static_cast<float>(x) * TILE_SIZE, static_cast<float>(y) * TILE_SIZE);
 				target.draw(current_interactive.sprite_);
 
@@ -121,7 +122,7 @@ void Level::SaveLevelToJson(const std::string& file_name)
         }
     }
 
-    // Writing the formatted JSON to the file
+    //Write the formatted JSON to the file
     std::ofstream file(file_name);
     file << json_level.dump(4);
     file.close();

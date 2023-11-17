@@ -1,5 +1,4 @@
 #pragma once
-#include "Player.h"
 #include "Tile.h"
 #include <SFML/Graphics.hpp>
 
@@ -15,6 +14,7 @@ class Level {
     static int level_width_;
     static int level_height_;
 	static int score_;
+	static int lives_;
 
     //I'd rather not use a static tile_map, but it's the only way I got the game to work and I only have one level for now so it's a temporary workaround
     static Tile tile_map_[1600];
@@ -31,6 +31,9 @@ public:
 
 	static int GetScore() { return score_; }
 	static void AugmentScore(const int score) { score_ += score; }
+
+	static int GetLives() { return lives_; }
+	static void LoseLife() { lives_--; }
 
 	static Tile GetTileMap() { return *tile_map_; }
 

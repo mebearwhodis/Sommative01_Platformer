@@ -1,11 +1,10 @@
 #include "Game.h"
+#include "HUD.h"
 
 #include <iostream>
 
 #include "Level.h"
 #include "Texture.h"
-
-
 
 
 void Game::init()
@@ -38,6 +37,8 @@ void Game::init()
 	background_sprite_.setTexture(Texture::background_texture_);
 	background_sprite_.setOrigin(background_sprite_.getGlobalBounds().width / 2, background_sprite_.getGlobalBounds().height / 2);
 	background_sprite_.scale(2.f, 2.f);
+
+	//hud_.timer_.restart();
 }
 
 void Game::update()
@@ -200,7 +201,7 @@ void Game::update()
 	//Interactables
 	if (Level::GetInteractAt(player_coords).deadly_) {
 		player_.ResetPosition(Level::GetRespawnPoint());
-		player_.LoseLife();
+		Level::LoseLife();
 	}
 	if (Level::GetInteractAt(player_coords).temporary_ && !Level::GetInteractAt(player_coords).taken_) {
 		Level::TakeItemAtCoords(player_coords);
@@ -235,19 +236,19 @@ void Game::update()
 
 	//Debugging
 	//Visualize limits
-	debug_limit_shape_vertical_.setPosition(limit_x_high, 0);
-	window_.draw(debug_limit_shape_vertical_);
-	debug_limit_shape_vertical_.setPosition(limit_x_low, 0);
-	window_.draw(debug_limit_shape_vertical_);
-	debug_limit_shape_horizontal_.setPosition(0, limit_y_high);
-	window_.draw(debug_limit_shape_horizontal_);
-	debug_limit_shape_horizontal_.setPosition(0, limit_y_low);
-	window_.draw(debug_limit_shape_horizontal_);
+	//debug_limit_shape_vertical_.setPosition(limit_x_high, 0);
+	//window_.draw(debug_limit_shape_vertical_);
+	//debug_limit_shape_vertical_.setPosition(limit_x_low, 0);
+	//window_.draw(debug_limit_shape_vertical_);
+	//debug_limit_shape_horizontal_.setPosition(0, limit_y_high);
+	//window_.draw(debug_limit_shape_horizontal_);
+	//debug_limit_shape_horizontal_.setPosition(0, limit_y_low);
+	//window_.draw(debug_limit_shape_horizontal_);
 
-	system("cls");
-	std::cout << std::to_string(player_coords.x) << "-" << std::to_string(player_coords.y) << std::endl;
-	std::cout << std::to_string(view_.getCenter().x) << "-" << std::to_string(view_.getCenter().y) << std::endl;
-	std::cout << player_.GetLives() << std::endl;
+	//system("cls");
+	//std::cout << std::to_string(player_coords.x) << "-" << std::to_string(player_coords.y) << std::endl;
+	//std::cout << std::to_string(view_.getCenter().x) << "-" << std::to_string(view_.getCenter().y) << std::endl;
+	//std::cout << Level::GetLives() << std::endl;
 
 
 	//player_.setPosition(player_.player_pos_.x, player_.player_pos_.y);
@@ -275,11 +276,16 @@ void Game::update()
 		view_.setCenter(player_.getPosition().x, TILE_SIZE * Level::GetLevelHeight() - view_.getSize().y / 2);
 	}
 
+	//const sf::Time elapsed_time = hud_.timer_.getElapsedTime();
+	//hud_.elapsed_time_seconds_ = elapsed_time.asSeconds();
+	//hud_.update(view_);
+
 	//Drawing the Level
 
 	window_.draw(background_sprite_);
 	Level::DrawLevel(window_);
 	window_.draw(player_);
+	//window_.draw(hud_);
 	window_.setView(view_);
 
 	// Window Display

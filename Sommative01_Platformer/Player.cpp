@@ -12,7 +12,6 @@ Player::Player(const std::string& textures_folder, const float sprint_modifier, 
 	move_force_ = sf::Vector2f(1, 0);
 
 	grounded_ = false;
-	lives_ = 10;
 }
 
 void Player::ResetPosition(const sf::Vector2f respawn_point)

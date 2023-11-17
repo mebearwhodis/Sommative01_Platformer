@@ -1,7 +1,5 @@
 #include "Interactive.h"
 
-#include "Texture.h"
-
 Interactive::Interactive()
 = default;
 

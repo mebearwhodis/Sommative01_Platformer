@@ -1,13 +1,12 @@
 #pragma once
 #include "Tile.h"
 #include <SFML/Graphics.hpp>
-
-#include "Level.h"
 #include "Texture.h"
 
 class Editor
 {
 public:
+
 	//Tiles
 	sf::RectangleShape base_tile_;
 	sf::RectangleShape hovered_tile_;
@@ -20,6 +19,7 @@ public:
 	//Window
 	sf::RenderWindow window_;
 	sf::View view_;
+
 
 	sf::Sprite background_sprite_;
 

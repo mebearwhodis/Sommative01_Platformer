@@ -1,13 +1,19 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 
-#include "Level.h"
+#include "HUD.h"
 #include "Player.h"
-#include "Texture.h"
+
+class HUD;
 
 class Game
 {
+
 public:
+
+	Player player_;
+	//HUD hud_;
+
 	//Physics
 	sf::Vector2f gravity_force_ = sf::Vector2f(0, 0.f);
 
@@ -19,17 +25,17 @@ public:
 
 	sf::Sprite background_sprite_;
 
-	//Player
-	Player player_;
 
 
-	Game() : player_("data/sprites/player", 1.2f, 3.f) {}
+
+	Game() : player_("data/sprites/player", 1.2f, 3.f), hud_()
+	{
+	}
 
 
 	//Window
 	sf::RenderWindow window_;
 	sf::View view_;
-
 
 
 	sf::Sprite GetBackgroundSprite() { return background_sprite_; }

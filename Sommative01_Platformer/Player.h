@@ -11,7 +11,6 @@ class Player final : public LivingEntity
 	sf::Vector2f move_force_;
 
 	bool grounded_;
-	int lives_;
 
 	//TODO: Set all movement related stuff here or in Living Entity
 	
@@ -33,8 +32,6 @@ public:
 	bool GetGroundedValue() const { return grounded_; }
 	void SetGroundedValue(const bool grounded_value) { grounded_ = grounded_value; }
 
-	int GetLives() const { return lives_;}
-	void LoseLife() { lives_--; }
 
 	Player(const std::string& textures_folder, const float sprint_modifier, const float horizontal_max_speed);
 

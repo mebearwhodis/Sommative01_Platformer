@@ -1,7 +1,7 @@
 #include "Editor.h"
-
-#include <iostream>
 #include <nlohmann/json.hpp>
+
+#include "Level.h"
 
 
 void Editor::init()
