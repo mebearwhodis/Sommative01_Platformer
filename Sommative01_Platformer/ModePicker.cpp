@@ -6,7 +6,7 @@
 GameMode ModePicker::ModeChoice()
 {
 	{
-		window_.create(sf::VideoMode(800, 600), "Game Modes Menu");
+		window_.create(sf::VideoMode(800, 600), "Game Modes Menu", sf::Style::Titlebar | sf::Style::Close);
 		sf::Font font;
 		font.loadFromFile("data/font/DynaPuff-Regular.ttf");
 

@@ -10,7 +10,7 @@ void Game::init()
 	Level::LoadLevelFromJson("levelOne.json");
 
 	//Basic Setup of the window
-	window_.create(sf::VideoMode(800, 800), "The Game");
+	window_.create(sf::VideoMode(800, 800), "The Game", sf::Style::Titlebar | sf::Style::Close);
 	window_.setFramerateLimit(30);
 	window_.setVerticalSyncEnabled(true);
 	window_.setMouseCursorVisible(false);

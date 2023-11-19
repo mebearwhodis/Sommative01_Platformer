@@ -43,7 +43,7 @@ void Texture::LoadTextures() {
 	spike2_.loadFromFile("data/sprites/interactives/sawHalf_move.png");
 	star_.loadFromFile("data/sprites/interactives/star.png");
 
-	background_texture_.loadFromFile("data/sprites/backgrounds/blue_desert.png");
+	background_texture_.loadFromFile("data/sprites/backgrounds/colored_grass.png");
 
 	tile_type_to_texture_ = {};
 	tile_type_to_texture_[TileType::kEmpty] = empty_;

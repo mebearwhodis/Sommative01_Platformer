@@ -10,7 +10,7 @@ void Editor::init()
 	Level::LoadLevelFromJson("levelOne.json");
 
 	//Basic Setup of the window
-	window_.create(sf::VideoMode(800, 800), "Level Editor");
+	window_.create(sf::VideoMode(800, 800), "Level Editor", sf::Style::Titlebar | sf::Style::Close);
 	window_.setVerticalSyncEnabled(false);
 	window_.setFramerateLimit(30);
 	window_.setMouseCursorVisible(false);

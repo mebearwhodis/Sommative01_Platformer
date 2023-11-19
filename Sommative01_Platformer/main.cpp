@@ -4,12 +4,12 @@
 #include "Editor.h"
 #include "Game.h"
 
+//TODO: Add little Editor hub, add animations, maybe even sounds
 
 int main()
 {
 	ModePicker mode_picker;
 	const GameMode answer = mode_picker.ModeChoice();
-
 
 	switch (answer)
 	{
