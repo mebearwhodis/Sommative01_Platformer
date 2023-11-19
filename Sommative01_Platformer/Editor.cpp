@@ -175,8 +175,6 @@ void Editor::update()
 	hovered_tile_.setPosition(static_cast<float>(mouse_tile_coord.x) * TILE_SIZE, static_cast<float>(mouse_tile_coord.y) * TILE_SIZE);
 
 
-
-
 	
 	//Editor interaction
 	if (sf::Mouse::isButtonPressed(sf::Mouse::Left))

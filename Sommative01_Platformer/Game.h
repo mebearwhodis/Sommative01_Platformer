@@ -4,15 +4,13 @@
 #include "HUD.h"
 #include "Player.h"
 
-class HUD;
-
 class Game
 {
 
 public:
 
 	Player player_;
-	//HUD hud_;
+	HUD hud_;
 
 	//Physics
 	sf::Vector2f gravity_force_ = sf::Vector2f(0, 0.f);

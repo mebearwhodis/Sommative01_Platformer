@@ -33,7 +33,8 @@ void Game::init()
 	background_sprite_.setOrigin(background_sprite_.getGlobalBounds().width / 2, background_sprite_.getGlobalBounds().height / 2);
 	background_sprite_.scale(2.f, 2.f);
 
-	//hud_.timer_.restart();
+	hud_.init(window_);
+	hud_.timer_.restart();
 }
 
 void Game::update()
@@ -262,16 +263,16 @@ void Game::update()
 	//	view_.setCenter(player_.getPosition().x, TILE_SIZE * Level::GetLevelHeight() - view_.getSize().y / 2);
 	//}
 
-	//const sf::Time elapsed_time = hud_.timer_.getElapsedTime();
-	//hud_.elapsed_time_seconds_ = elapsed_time.asSeconds();
-	//hud_.update(view_);
+	const sf::Time elapsed_time = hud_.timer_.getElapsedTime();
+	hud_.elapsed_time_seconds_ = elapsed_time.asSeconds();
+	hud_.update(view_);
 
 	//Drawing the Level
 	window_.draw(background_sprite_);
 	Level::DrawLevel(window_);
 	window_.draw(player_);
-	//window_.draw(hud_);
 	window_.setView(view_);
+	window_.draw(hud_);
 
 	// Window Display
 	window_.display();
