@@ -1,5 +1,6 @@
 #pragma once
 #include "Entity.h"
+#include <vector>
 
 class LivingEntity : public Entity, public sf::Transformable
 {
@@ -11,10 +12,12 @@ class LivingEntity : public Entity, public sf::Transformable
 
 public:
 
-	sf::Texture up_;
-	sf::Texture down_;
-	sf::Texture left_;
-	sf::Texture right_;
+	sf::Texture jump_r_;
+	sf::Texture jump_l_;
+	sf::Texture still_r_;
+	sf::Texture still_l_;
+	std::vector <sf::Texture> left_;
+	std::vector <sf::Texture> right_;
 
 	//Constructor
 	explicit LivingEntity(const std::string& textures_folder, float sprint_modifier, float horizontal_max_speed);

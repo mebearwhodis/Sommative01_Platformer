@@ -1,4 +1,7 @@
 #include "Game.h"
+
+#include <iostream>
+
 #include "HUD.h"
 #include "Level.h"
 #include "Texture.h"
@@ -39,7 +42,6 @@ void Game::init()
 
 void Game::update()
 {
-
 	sf::Event event;
 
 	while (window_.isOpen() && !is_game_over_)
@@ -56,6 +58,7 @@ void Game::update()
 			}
 		}
 
+		if (animation_idx_ > 10) { animation_idx_ = 0; }
 		window_.clear();
 		float limit_x_low = -1000000000.f;
 		float limit_x_high = 1000000000.f;
@@ -66,8 +69,10 @@ void Game::update()
 		player_.SetJumpForce(sf::Vector2f(0.0f, 0.0f));
 		player_.SetMoveForce(sf::Vector2f(0.0f, 0.0f));
 
+
 		SetBackgroundPosition(sf::Vector2f(view_.getCenter()));
 
+	
 		//Movement---------------------------------------------------------------------------------------------------------------------------------------------------
 
 		//Sprint & Air Control
@@ -91,18 +96,47 @@ void Game::update()
 		sf::Vector2f delta(0, 0);
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) || sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
 		{
-			player_.SetSprite(player_.left_);
+			if (player_.GetGroundedValue())
+			{
+				if (animation_idx_ > 5)
+				{
+					player_.SetSprite(player_.left_[0]);
+				}
+				else if (animation_idx_ < 5)
+				{
+					player_.SetSprite(player_.left_[1]);
+				}
+			}
+			else
+			{
+				player_.SetSprite(player_.jump_l_);
+			}
 			delta += sf::Vector2f(-1 * (player_.GetPlayerBaseSpeed().x + player_.GetPlayerSpeed().x) * speed_factor, 0);
 		}
 
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) || sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
 		{
-			player_.SetSprite(player_.right_);
+			if (player_.GetGroundedValue())
+			{
+				if (animation_idx_ > 5)
+				{
+					player_.SetSprite(player_.right_[0]);
+				}
+				else if (animation_idx_ < 5)
+				{
+					player_.SetSprite(player_.right_[1]);
+				}
+			}
+			else
+			{
+				player_.SetSprite(player_.jump_r_);
+			}
 			delta += sf::Vector2f((player_.GetPlayerBaseSpeed().x + player_.GetPlayerSpeed().x) * speed_factor, 0);
 		}
 
-
 		//TODO: Find a use for W & S, maybe some kind of powerup/groundpound
+
+
 		//Capping falling speed
 		if (player_.GetPlayerSpeed().y > 5)
 		{
@@ -115,6 +149,7 @@ void Game::update()
 		if (jump_key_is_down && player_.GetGroundedValue())
 		{
 			player_.SetJumpForce(sf::Vector2f(0.0f, -35.0f));
+			player_.SetSprite(player_.jump_r_);
 		}
 
 		player_.SetPlayerVelocity(sf::Vector2f(player_.GetPlayerVelocity().x, player_.GetPlayerVelocity().y + (jump_key_is_down ? 1.2f : 1.9f)));
@@ -146,7 +181,7 @@ void Game::update()
 			}
 			player_.SetPlayerSpeed(sf::Vector2f(player_.GetPlayerSpeed().x * 0.92f, player_.GetPlayerSpeed().y));
 		}
-
+		
 
 		delta += sf::Vector2f(player_.GetPlayerVelocity().x, player_.GetPlayerVelocity().y);
 
@@ -287,6 +322,8 @@ void Game::update()
 
 		// Window Display
 		window_.display();
+		animation_idx_++;
+		std::cout << animation_idx_ << std::endl;
 
 	}
 	while (window_.isOpen() && is_game_over_)

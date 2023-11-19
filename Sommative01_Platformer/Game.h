@@ -11,6 +11,7 @@ public:
 
 	Player player_;
 	HUD hud_;
+	int animation_idx_;
 
 	//Physics
 	sf::Vector2f gravity_force_ = sf::Vector2f(0, 0.f);
