@@ -6,7 +6,7 @@ Player::Player(const std::string& textures_folder, const float sprint_modifier, 
 	player_size_ = sf::Vector2f(134, 190);
 
 	player_speed_ = sf::Vector2f(5, 0);
-	player_base_speed_ = sf::Vector2f(20, 0);
+	player_base_speed_ = sf::Vector2f(25, 0);
 	player_velocity_ = sf::Vector2f(0, 0);
 	jump_force_ = sf::Vector2f(0, 0);
 	move_force_ = sf::Vector2f(1, 0);

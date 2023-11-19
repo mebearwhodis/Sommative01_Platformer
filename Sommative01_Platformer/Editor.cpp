@@ -8,11 +8,8 @@ void Editor::init()
 {
 	Texture::LoadTextures();
 	Level::LoadLevelFromJson("levelOne.json");
-	
 
-
-	// Basic Setup of the window
-	// Vertical sync, framerate
+	//Basic Setup of the window
 	window_.create(sf::VideoMode(800, 800), "Level Editor");
 	window_.setVerticalSyncEnabled(false);
 	window_.setFramerateLimit(30);
@@ -20,7 +17,6 @@ void Editor::init()
 
 	view_.setSize(2000, 2000);
 	view_.setCenter(1000, 1000);
-
 
 	//Cursor Tile
 	hovered_tile_.setSize(sf::Vector2f(TILE_SIZE, TILE_SIZE));
@@ -43,12 +39,13 @@ void Editor::update()
 
 
 	sf::Event event;
+
 	while (window_.pollEvent(event)) {
 		if (event.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
 		{
 			window_.close();
 		}
-		//---------Key 0
+		//---------Key 0 : Switch between tiles/interactables
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::LShift))
 		{
 			stamp_type_ = !stamp_type_;
@@ -137,13 +134,13 @@ void Editor::update()
 				Level::SetInteractSprite(Texture::GetTileTextureFromType(TileType::kEmpty),i);
 			}
 		}
-		// Saves the level
+		//Saves the level
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::F5))
 		{
 			Level::SaveLevelToJson("levelOne.json");
 		}
 
-		// Loads the level
+		//Loads the level
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::F9))
 		{
 			Level::LoadLevelFromJson("levelOne.json");
@@ -152,7 +149,6 @@ void Editor::update()
 
 
 	//View
-
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) || sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
 	{
 		if (view_.getCenter().x - view_.getSize().x / 2 > 0)

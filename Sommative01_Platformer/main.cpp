@@ -7,24 +7,6 @@
 
 int main()
 {
-	//Game:
-	//Game game;
-	//game.init();
-	//while (game.window_.isOpen())
-	//{
-	//	game.update();
-	//}
-
-	//Editor:
-	//Editor editor;
-	//editor.init();
-
-	//while (editor.window_.isOpen())
-	//{
-	//	editor.update();
-	//}
-
-	//Both:
 	ModePicker mode_picker;
 	const GameMode answer = mode_picker.ModeChoice();
 

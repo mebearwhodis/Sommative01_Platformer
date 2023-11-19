@@ -1,8 +1,5 @@
 #include "Game.h"
 #include "HUD.h"
-
-#include <iostream>
-
 #include "Level.h"
 #include "Texture.h"
 
@@ -11,20 +8,18 @@ void Game::init()
 {
 	Texture::LoadTextures();
 	Level::LoadLevelFromJson("levelOne.json");
-	//selected_tile_ = Tile(TileType::kEmpty, false, false);
-	//player_pos_ = Level::GetStartingPoint();
 
-	// Set up the Window
+	//Basic Setup of the window
 	window_.create(sf::VideoMode(800, 800), "The Game");
 	window_.setFramerateLimit(30);
 	window_.setVerticalSyncEnabled(true);
 	window_.setMouseCursorVisible(false);
 
-	// Set up the View
+	//Set up the View
 	view_.setSize(2000, 2000);
 	view_.setCenter(1000, 1000);
 
-	// Create Debug limit lines
+	//Create collision lines
 	debug_limit_shape_vertical_.setSize(sf::Vector2f(2, 100000));
 	debug_limit_shape_vertical_.setOrigin(1, 0);
 	debug_limit_shape_vertical_.setFillColor(sf::Color(255, 0, 255));
@@ -67,30 +62,7 @@ void Game::update()
 
 	SetBackgroundPosition(sf::Vector2f(view_.getCenter()));
 
-	// Collision debug lines
-	const sf::Vector2i player_coords = Level::PosToCoords(player_.getPosition());
-	//int player_coords_index = player_coords.y * Level::GetLevelWidth() + player_coords.x;
-
-	constexpr int margin = 1;
-
-	if (Level::GetTileAt(player_coords + sf::Vector2i(1, 0)).solid_ || (player_coords + sf::Vector2i(1, 0)).x >=
-		Level::GetLevelWidth()) {
-		limit_x_high = static_cast<float>(player_coords.x + 1) * TILE_SIZE - margin;
-	}
-	if (Level::GetTileAt(player_coords + sf::Vector2i(-1, 0)).solid_ || (player_coords + sf::Vector2i(-1, 0)).x < 0) {
-		limit_x_low = static_cast<float>(player_coords.x) * TILE_SIZE + margin;
-	}
-	if (Level::GetTileAt(player_coords + sf::Vector2i(0, 1)).solid_ || (player_coords + sf::Vector2i(0, 1)).y >=
-		Level::GetLevelHeight()) {
-		limit_y_high = static_cast<float>(player_coords.y + 1) * TILE_SIZE - margin;
-	}
-	if (Level::GetTileAt(player_coords + sf::Vector2i(0, -1)).solid_ || (player_coords + sf::Vector2i(0, -1)).y < 0) {
-		limit_y_low = static_cast<float>(player_coords.y) * TILE_SIZE + margin;
-	}
-
-
-
-	//Movement - what will modify the speed vector
+	//Movement---------------------------------------------------------------------------------------------------------------------------------------------------
 
 	//Sprint & Air Control
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::LShift) || sf::Keyboard::isKeyPressed(sf::Keyboard::RShift))
@@ -114,27 +86,24 @@ void Game::update()
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) || sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
 	{
 		player_.SetSprite(player_.left_);
-		delta += sf::Vector2f(-1 * (player_.GetPlayerBaseSpeed().x) * speed_factor, 0);
+		delta += sf::Vector2f(-1 * (player_.GetPlayerBaseSpeed().x + player_.GetPlayerSpeed().x) * speed_factor, 0);
 	}
 
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) || sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
 	{
 		player_.SetSprite(player_.right_);
-		delta += sf::Vector2f((player_.GetPlayerBaseSpeed().x) * speed_factor, 0);
+		delta += sf::Vector2f((player_.GetPlayerBaseSpeed().x + player_.GetPlayerSpeed().x) * speed_factor, 0);
 	}
+
 
 	//TODO: Find a use for W & S, maybe some kind of powerup/groundpound
-
 	//Capping falling speed
-	if (player_.GetPlayerSpeed().y > 3)
+	if (player_.GetPlayerSpeed().y > 5)
 	{
-		player_.SetPlayerSpeed(sf::Vector2f(player_.GetPlayerSpeed().x, 3));
+		player_.SetPlayerSpeed(sf::Vector2f(player_.GetPlayerSpeed().x, 5));
 	}
 
-
-
 	//Player_velocity is a summ of forces
-
 	//Jump higher if you press longer
 	const bool jump_key_is_down = sf::Keyboard::isKeyPressed(sf::Keyboard::Space);
 	if (jump_key_is_down && player_.GetGroundedValue())
@@ -142,32 +111,30 @@ void Game::update()
 		player_.SetJumpForce(sf::Vector2f(0.0f, -35.0f));
 	}
 
-	player_.SetPlayerVelocity(sf::Vector2f(player_.GetPlayerVelocity().x, player_.GetPlayerVelocity().y + (jump_key_is_down ? 0.0f : 1.5f)));
+	player_.SetPlayerVelocity(sf::Vector2f(player_.GetPlayerVelocity().x, player_.GetPlayerVelocity().y + (jump_key_is_down ? 1.2f : 1.9f)));
 
 	if (!player_.GetGroundedValue())
 	{
 		player_.SetPlayerVelocity(player_.GetPlayerVelocity() + gravity_force_);
 	}
-
-	// Cancel vertical velocity if grounded
+	//Cancel vertical velocity if grounded
 	else
 	{
 		player_.SetPlayerVelocity(sf::Vector2f(player_.GetPlayerVelocity().x, 0));
 	}
 
 	player_.SetPlayerVelocity(player_.GetPlayerVelocity() + player_.GetJumpForce());
-	player_.SetPlayerVelocity(player_.GetPlayerVelocity() + player_.GetMoveForce());
 
 
 	//Horizontal deceleration and acceleration
 	player_.SetPlayerSpeed(player_.GetPlayerSpeed() + player_.GetPlayerVelocity());
 	if (!player_.GetGroundedValue())
 	{
-		player_.SetPlayerSpeed(sf::Vector2f(player_.GetPlayerSpeed().x * 0.95f, player_.GetPlayerSpeed().y));
+		player_.SetPlayerSpeed(sf::Vector2f(player_.GetPlayerSpeed().x * 0.9f, player_.GetPlayerSpeed().y));
 	}
 	else
 	{
-		if (std::abs(player_.GetPlayerSpeed().x) < 0.3)
+		if (std::abs(player_.GetPlayerSpeed().x) < 0.1)
 		{
 			player_.SetPlayerSpeed(sf::Vector2f(0, player_.GetPlayerSpeed().y));
 		}
@@ -180,7 +147,27 @@ void Game::update()
 	//Position is a sum of speeds
 	player_.setPosition(player_.getPosition().x + delta.x, player_.getPosition().y + delta.y);
 
-	//Collision Handler
+
+	//Collision Handler----------------------------------------------------------------------------------------------------------------
+	const sf::Vector2i player_coords = Level::PosToCoords(player_.getPosition());
+
+	constexpr int margin = 1;
+
+	if (Level::GetTileAt(player_coords + sf::Vector2i(1, 0)).solid_ || (player_coords + sf::Vector2i(1, 0)).x >=
+		Level::GetLevelWidth()) {
+		limit_x_high = static_cast<float>(player_coords.x + 1) * TILE_SIZE - margin;
+	}
+	if (Level::GetTileAt(player_coords + sf::Vector2i(-1, 0)).solid_ || (player_coords + sf::Vector2i(-1, 0)).x < 0) {
+		limit_x_low = static_cast<float>(player_coords.x) * TILE_SIZE + margin;
+	}
+	if (Level::GetTileAt(player_coords + sf::Vector2i(0, 1)).solid_ || (player_coords + sf::Vector2i(0, 1)).y >=
+		Level::GetLevelHeight()) {
+		limit_y_high = static_cast<float>(player_coords.y + 1) * TILE_SIZE - margin;
+	}
+	if (Level::GetTileAt(player_coords + sf::Vector2i(0, -1)).solid_ || (player_coords + sf::Vector2i(0, -1)).y < 0) {
+		limit_y_low = static_cast<float>(player_coords.y) * TILE_SIZE + margin;
+	}
+
 	if (player_.getPosition().x >= limit_x_high - (player_.GetPlayerSize().x / 2)) {
 		player_.setPosition(limit_x_high - (player_.GetPlayerSize().x / 2), player_.getPosition().y);
 	}
@@ -198,7 +185,7 @@ void Game::update()
 	}
 
 
-	//Interactables
+	//Interactables--------------------------------------------------------------------------------------------------------------------------------------
 	if (Level::GetInteractAt(player_coords).deadly_) {
 		player_.ResetPosition(Level::GetRespawnPoint());
 		Level::LoseLife();
@@ -221,6 +208,7 @@ void Game::update()
 				if (Level::GetInteractAt(coords).interactive_type_ == InteractiveType::kCheckpointUp && coords != player_coords) {
 					// Change other CheckpointUp to Checkpoint
 					Level::SetInteractAt(Interactive{ InteractiveType::kCheckpoint, false, false, false }, coords.y * Level::GetLevelWidth() + coords.x);
+					//TODO: Getting white squares here
 					Level::SetInteractSprite(Texture::GetInteractTextureFromType(InteractiveType::kCheckpoint), coords.y* Level::GetLevelWidth() + coords.x);
 				}
 			}
@@ -232,9 +220,7 @@ void Game::update()
 	}
 
 
-
-
-	//Debugging
+	//Debugging-------------------------------------------------------------------------------------------------------------------------------------------------------
 	//Visualize limits
 	//debug_limit_shape_vertical_.setPosition(limit_x_high, 0);
 	//window_.draw(debug_limit_shape_vertical_);
@@ -244,44 +230,43 @@ void Game::update()
 	//window_.draw(debug_limit_shape_horizontal_);
 	//debug_limit_shape_horizontal_.setPosition(0, limit_y_low);
 	//window_.draw(debug_limit_shape_horizontal_);
-
 	//system("cls");
 	//std::cout << std::to_string(player_coords.x) << "-" << std::to_string(player_coords.y) << std::endl;
 	//std::cout << std::to_string(view_.getCenter().x) << "-" << std::to_string(view_.getCenter().y) << std::endl;
 	//std::cout << Level::GetLives() << std::endl;
 
 
-	//player_.setPosition(player_.player_pos_.x, player_.player_pos_.y);
-
-
+	//View-------------------------------------------------------------------------------------------------------------------------------------------------------
+	view_.setCenter(player_.getPosition().x, Level::GetLevelHeight()* static_cast<float>(TILE_SIZE / 2));
 	//Stop the view at the edges of the level
 	//Left ---------
 	if (view_.getCenter().x < view_.getSize().x / 2)
 	{
-		view_.setCenter(view_.getSize().x / 2, player_.getPosition().y);
+		view_.setCenter(view_.getSize().x / 2, view_.getCenter().y);
 	}
 	//Right ---------
-	if (view_.getCenter().x + view_.getSize().x / 2 >= TILE_SIZE * Level::GetLevelWidth())
+	if (view_.getCenter().x + view_.getSize().x / 2 > TILE_SIZE * Level::GetLevelWidth())
 	{
-		view_.setCenter(TILE_SIZE * Level::GetLevelWidth() - view_.getSize().x / 2, player_.getPosition().y);
+		view_.setCenter(TILE_SIZE * Level::GetLevelWidth() - view_.getSize().x / 2, view_.getCenter().y);
 	}
-	//Up ---------
-	if (view_.getCenter().y - view_.getSize().y / 2 <= 0)
-	{
-		view_.setCenter(player_.getPosition().x, view_.getSize().y / 2);
-	}
-	//Down ---------
-	if (view_.getCenter().y + view_.getSize().y / 2 >= TILE_SIZE * Level::GetLevelHeight())
-	{
-		view_.setCenter(player_.getPosition().x, TILE_SIZE * Level::GetLevelHeight() - view_.getSize().y / 2);
-	}
+
+	//The following two would be used in a more vertical level
+	////Up ---------
+	//if (view_.getCenter().y - view_.getSize().y / 2 < 0)
+	//{
+	//	view_.setCenter(player_.getPosition().x, view_.getSize().y / 2 + TILE_SIZE/2);
+	//}
+	////Down ---------
+	//if (view_.getCenter().y + view_.getSize().y / 2 > TILE_SIZE * Level::GetLevelHeight())
+	//{
+	//	view_.setCenter(player_.getPosition().x, TILE_SIZE * Level::GetLevelHeight() - view_.getSize().y / 2);
+	//}
 
 	//const sf::Time elapsed_time = hud_.timer_.getElapsedTime();
 	//hud_.elapsed_time_seconds_ = elapsed_time.asSeconds();
 	//hud_.update(view_);
 
 	//Drawing the Level
-
 	window_.draw(background_sprite_);
 	Level::DrawLevel(window_);
 	window_.draw(player_);
