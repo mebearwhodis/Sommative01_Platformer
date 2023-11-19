@@ -8,7 +8,7 @@ GameMode ModePicker::ModeChoice()
 	{
 		window_.create(sf::VideoMode(800, 600), "Game Modes Menu");
 		sf::Font font;
-		font.loadFromFile("data/arial.ttf");
+		font.loadFromFile("data/font/DynaPuff-Regular.ttf");
 
 		sf::Text title("Select Game Mode", font, 30);
 		title.setPosition(280.f, 50.f);

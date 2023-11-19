@@ -23,7 +23,8 @@ public:
 
 	sf::Sprite background_sprite_;
 
-
+	bool is_game_over_ = false;
+	bool is_game_won_ = false;
 
 
 	Game() : player_("data/sprites/player", 1.2f, 3.f){}
@@ -41,6 +42,7 @@ public:
 
 	void init();
 	void update();
+	void game_ended();
 };
 
 

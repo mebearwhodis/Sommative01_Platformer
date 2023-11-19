@@ -15,12 +15,9 @@ int main()
 	{
 	case(GameMode::kGame):
 	{
-	Game game;
+		Game game;
 		game.init();
-		while (game.window_.isOpen())
-		{
-			game.update();
-		}
+		game.update();
 		break;
 	}
 	case GameMode::kEditor:

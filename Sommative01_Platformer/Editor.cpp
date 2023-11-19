@@ -212,7 +212,7 @@ void Editor::update()
 	window_.setView(view_);
 
 	sf::Font font;
-	font.loadFromFile("data/arial.ttf");
+	font.loadFromFile("data/font/DynaPuff-Regular.ttf");
 	std::string current_selection = std::to_string(stamp_type_);
 	sf::Text title(current_selection, font, 30);
 	title.setPosition(280.f, 50.f);
