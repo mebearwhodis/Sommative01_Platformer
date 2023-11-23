@@ -14,12 +14,15 @@ public:
     static sf::Texture checkpoint_down_;
     static sf::Texture checkpoint_up1_;
     static sf::Texture checkpoint_up2_;
+    static std::vector <sf::Texture> checkpoint_;
     static sf::Texture coin_;
     static sf::Texture diamond_;
     static sf::Texture floating_spike1_;
     static sf::Texture floating_spike2_;
+    static std::vector <sf::Texture> floating_spike_;
     static sf::Texture spike1_;
     static sf::Texture spike2_;
+    static std::vector <sf::Texture> grounded_spike_;
     static sf::Texture star_;
 
     static sf::Texture background_texture_;

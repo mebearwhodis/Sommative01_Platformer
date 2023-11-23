@@ -6022,13 +6022,13 @@
             "deadly": false,
             "taken": false,
             "temporary": false,
-            "type": 0
+            "type": 7
         },
         {
             "deadly": false,
             "taken": false,
             "temporary": false,
-            "type": 0
+            "type": 7
         },
         {
             "deadly": false,
@@ -8440,7 +8440,7 @@
             "deadly": false,
             "taken": false,
             "temporary": false,
-            "type": 0
+            "type": 1
         },
         {
             "deadly": false,
@@ -8488,7 +8488,7 @@
             "deadly": false,
             "taken": false,
             "temporary": false,
-            "type": 0
+            "type": 1
         },
         {
             "deadly": false,

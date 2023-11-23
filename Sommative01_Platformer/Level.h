@@ -51,6 +51,7 @@ public:
 	static Interactive GetInteractAt(const int index) { return interact_map_[index]; }
 	static InteractiveType GetInteractTypeAt(sf::Vector2i item_coord);
 	static InteractiveType GetInteractTypeAt(const int index) { return interact_map_[index].interactive_type_; }
+	static const sf::Texture* GetInteractTexture(const int index) { return interact_map_[index].sprite_.getTexture(); }
 
 	static void SetInteractAt(const Interactive& t, const int index) { interact_map_[index] = t; }
 	static void SetInteractSprite(const sf::Texture& t, const int index) { interact_map_[index].sprite_.setTexture(t); }

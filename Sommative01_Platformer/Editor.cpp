@@ -186,6 +186,7 @@ void Editor::update()
 			{
 				Level::SetTileAt(selected_tile_, index);
 				Level::SetTileSprite(Texture::GetTileTextureFromType(selected_tile_.tile_type_), index);
+				
 			}else
 			{
 				Level::SetInteractAt(selected_interact_, index);

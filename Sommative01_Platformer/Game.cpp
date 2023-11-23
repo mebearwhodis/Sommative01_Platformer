@@ -36,6 +36,18 @@ void Game::init()
 	background_sprite_.setOrigin(background_sprite_.getGlobalBounds().width / 2, background_sprite_.getGlobalBounds().height / 2);
 	background_sprite_.scale(2.f, 2.f);
 
+	for (int y = 0; y < Level::GetLevelHeight(); y++)
+	{
+		for (int x = 0; x < Level::GetLevelWidth(); x++)
+		{
+			const sf::Vector2i coords(x, y);
+
+			if (Level::GetInteractAt(coords).interactive_type_ == InteractiveType::kCheckpoint) {
+				Level::SetInteractSprite(Texture::checkpoint_[0], coords.y * Level::GetLevelWidth() + coords.x);
+			}
+		}
+	}
+
 	hud_.init(window_);
 	hud_.timer_.restart();
 }
@@ -59,6 +71,7 @@ void Game::update()
 		}
 
 		if (animation_idx_ > 10) { animation_idx_ = 0; }
+
 		window_.clear();
 		float limit_x_low = -1000000000.f;
 		float limit_x_high = 1000000000.f;
@@ -240,9 +253,10 @@ void Game::update()
 			Level::TakeItemAtCoords(player_coords);
 		}
 		if (Level::GetInteractAt(player_coords).interactive_type_ == InteractiveType::kCheckpoint) {
+			int current_tile_idx = player_coords.y * Level::GetLevelWidth() + player_coords.x;
 			// Update the current checkpoint to CheckpointUp and set it as the new respawn point
-			Level::SetInteractAt(Interactive{ InteractiveType::kCheckpointUp, false, false, false }, player_coords.y * Level::GetLevelWidth() + player_coords.x);
-			Level::SetInteractSprite(Texture::GetInteractTextureFromType(InteractiveType::kCheckpointUp), player_coords.y * Level::GetLevelWidth() + player_coords.x);
+			//Level::SetInteractAt(Interactive{ InteractiveType::kCheckpointUp, false, false, false }, player_coords.y * Level::GetLevelWidth() + player_coords.x);
+			Level::SetInteractSprite(Texture::checkpoint_[1], current_tile_idx);
 			Level::SetRespawnPoint(sf::Vector2f(player_coords * TILE_SIZE));
 
 			for (int y = 0; y < Level::GetLevelHeight(); y++)
@@ -251,11 +265,9 @@ void Game::update()
 				{
 					sf::Vector2i coords(x, y);
 
-					if (Level::GetInteractAt(coords).interactive_type_ == InteractiveType::kCheckpointUp && coords != player_coords) {
+					if (Level::GetInteractAt(coords).interactive_type_ == InteractiveType::kCheckpoint && coords != player_coords) {
 						// Change other CheckpointUp to Checkpoint
-						Level::SetInteractAt(Interactive{ InteractiveType::kCheckpoint, false, false, false }, coords.y * Level::GetLevelWidth() + coords.x);
-						//TODO: Getting white squares here
-						Level::SetInteractSprite(Texture::GetInteractTextureFromType(InteractiveType::kCheckpoint), coords.y * Level::GetLevelWidth() + coords.x);
+						Level::SetInteractSprite(Texture::checkpoint_[0], coords.y * Level::GetLevelWidth() + coords.x);
 					}
 				}
 			}
@@ -266,6 +278,64 @@ void Game::update()
 			is_game_won_ = true;
 		}
 
+		//Interactables animation
+		if (animation_idx_ > 5)
+		{
+			for (int y = 0; y < Level::GetLevelHeight(); y++)
+			{
+				for (int x = 0; x < Level::GetLevelWidth(); x++)
+				{
+					sf::Vector2i coords(x, y);
+					int coords_idx = coords.y * Level::GetLevelWidth() + coords.x;
+
+					if (Level::GetInteractAt(coords).interactive_type_ == InteractiveType::kFloatingSpikes) 
+					{
+						Level::SetInteractSprite(Texture::floating_spike_[0], coords_idx);
+					}
+					if (Level::GetInteractAt(coords).interactive_type_ == InteractiveType::kSpikes)
+					{
+						Level::SetInteractSprite(Texture::grounded_spike_[0], coords_idx);
+					}
+					if (Level::GetInteractAt(coords).interactive_type_ == InteractiveType::kCheckpoint) {
+						const sf::Texture* interact_texture = Level::GetInteractTexture(coords_idx);
+						const sf::Texture* checkpoint_texture = &Texture::checkpoint_[0];
+
+						if (interact_texture != checkpoint_texture) {
+							Level::SetInteractSprite(Texture::checkpoint_[1], coords_idx);
+						}
+					}
+
+				}
+			}
+		}
+		else if (animation_idx_ < 5)
+		{
+			for (int y = 0; y < Level::GetLevelHeight(); y++)
+			{
+				for (int x = 0; x < Level::GetLevelWidth(); x++)
+				{
+					sf::Vector2i coords(x, y);
+					int coords_idx = coords.y * Level::GetLevelWidth() + coords.x;
+
+					if (Level::GetInteractAt(coords).interactive_type_ == InteractiveType::kFloatingSpikes)
+					{
+						Level::SetInteractSprite(Texture::floating_spike_[1], coords_idx);
+					}
+					if (Level::GetInteractAt(coords).interactive_type_ == InteractiveType::kSpikes)
+					{
+						Level::SetInteractSprite(Texture::grounded_spike_[1], coords_idx);
+					}
+					if (Level::GetInteractAt(coords).interactive_type_ == InteractiveType::kCheckpoint) {
+						const sf::Texture* interact_texture = Level::GetInteractTexture(coords_idx);
+						const sf::Texture* checkpoint_texture = &Texture::checkpoint_[0];
+
+						if (interact_texture != checkpoint_texture) {
+							Level::SetInteractSprite(Texture::checkpoint_[2], coords_idx);
+						}
+					}
+				}
+			}
+		}
 
 		//Debugging-------------------------------------------------------------------------------------------------------------------------------------------------------
 		//Visualize limits
